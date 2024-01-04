@@ -12,7 +12,11 @@ namespace Atbbank.WebUI
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddDbContext<DataContext>(cfg => {
-                cfg.UseSqlServer(builder.Configuration.GetConnectionString("cElish"));
+                cfg.UseSqlServer(builder.Configuration.GetConnectionString("cElish"),
+                    opt =>
+                    {
+                        opt.MigrationsHistoryTable("Migrations");
+                    });
             });
 
             var app = builder.Build();

@@ -1,0 +1,275 @@
+header{
+    margin: 2rem 8rem !important;
+    display: inline;
+    list-style-type: none;
+    position: absolute;
+    top: 1% !important;
+    z-index: 695;
+    justify-content: space-around;
+    font-weight: normal !important;
+    font-size: 14px;
+
+    .item-1 { grid-area: first; }
+    .item-2 { grid-area: second; }
+    .item-3 { grid-area: third; }
+    .item-4 { grid-area: last; }
+    
+    .grid-container-header {
+      display: grid;
+      grid-template-areas:
+        'first second last'
+        'first third  last';
+      column-gap: 3rem;
+      row-gap: 1px;
+    }
+
+    .item-1 { grid-area: first; }
+    .item-2 { grid-area: second; }
+    .item-4 { grid-area: last; }
+    
+    .grid-container-header-other {
+      display: grid;
+      grid-template-areas:
+        'first second last';
+      column-gap: 1rem;
+      row-gap: 1px;
+
+      .item-2{
+        padding-right: 20rem;
+      }
+    }
+    
+    .grid-container-header > div {
+      text-align: left;
+
+    }
+
+ 
+    
+      .item-3-one { grid-area: one; }
+      .item-3-two { grid-area: two; }
+      .item-3-there { grid-area: there; }
+      .item-3-four { grid-area: four; }
+      .item-3-five { grid-area: five; }
+      .item-3-six { grid-area: six; }
+      
+      .grid-container-item-3 {
+        display: grid;
+        grid-template-areas:
+          'one two there four five six';
+        column-gap: 1rem;
+        row-gap: 10px;
+        
+      }
+      
+      .grid-container-item-3> div {
+        text-align: left;
+      }
+
+  
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover{
+        color: #6F0BBB;
+        i{
+            color: #6F0BBB !important;
+        }
+    }
+
+    i{
+        color: black !important;
+    }
+
+    #burger-btn{
+        display: none;
+    }
+
+    #logo{
+        width: 85px;
+        height: 55px;
+    }
+
+    ul{
+        li{
+            display: inline;
+        }
+        a{
+            margin-right: 1rem;
+            font-weight: bold;
+        }
+    }
+
+    button.subscribe{
+        background: none;
+        color: white ;
+        font-weight: 900;
+        overflow: auto;
+        border: 0 solid white;
+        margin-left: 0.5rem;
+    }
+
+    #atb360{
+        color: white;
+        border: none;
+        border-radius: 7px;
+        padding: 8px 10px 10px;
+        font-weight: bold;
+        min-width: 80px;
+        background:linear-gradient(87.61deg,#6f0bbb -5.3%,#be9bd8 158.9%) ;
+
+    }
+    
+    #atbbusiness{
+        color: white;
+        border: none;
+        border-radius: 7px;
+        padding: 8px 5px 8px;
+        font-weight: bold;
+        min-width: 30px;
+        background:linear-gradient(87.61deg,#6f0bbb -5.3%,#be9bd8 158.9%) ;
+
+    }
+
+    #openaccount{
+        color: white;
+        border: none;
+        border-radius: 7px;
+        padding: .5rem 2px;
+        font-weight: bold;
+        background:#34035d;
+
+    }
+
+    .lang{
+        border: 1px solid #6F0BBB;
+        border-radius: 5px;
+        width: 35px;
+        padding: .2rem;
+        font-weight: bold;
+        a{
+            color: #6F0BBB;
+            font-size: 14px;
+        }
+    }
+
+    .navigation-menu-up{
+        justify-content: space-around !important;
+        margin-left: -1rem;
+
+    }
+
+    .nav{
+
+        .nav_btn {
+            color: black !important;
+            font-size: 14px;
+            font-weight: bold !important;
+        }
+          
+        .nav_main {
+            position: relative;
+            display: inline-block;
+        }
+          
+        .nav_content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 2px solid gray;
+            min-width: 700px;
+            border-radius: 10px;
+            z-index: 1;
+            
+            .menu-item__title{
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 3rem;
+                margin-left: 1rem;
+            }
+            .child_main{
+                border-right: 1px solid #d0d0d0;
+            }
+        }
+             
+        .nav_content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            line-height: 2;
+            margin-left: 1rem;
+        }
+        
+        .nav_content a:hover {
+            color: #6f0bbb ;
+        }
+        
+        .nav_main:hover .nav_content {
+            display: block;
+        }
+          
+        .nav_main:hover .nav_btn {
+            color: #6f0bbb !important;
+        }
+
+    }
+
+
+    .item-4{
+        .latestnav{
+            text-align: left;
+        }
+
+        .nav_bank_info_btn {
+            color: black !important;
+            font-size: 14px;
+            font-weight: bold !important;
+            
+        }
+          
+        .nav_bank_info {
+            position: relative;
+            display: inline !important;
+        }
+          
+        .nav_bank_info-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 2px solid gray;
+            min-width: 270px;
+            border-radius: 10px;
+            z-index: 1;
+            padding: 2rem;
+        }
+             
+        .nav_bank_info-content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            line-height: 1.5;
+        }
+        
+        .nav_bank_info-content a:hover {
+            color: #6f0bbb ;
+        }
+        
+        .nav_bank_info:hover .nav_bank_info-content {
+            display: block;
+        }
+          
+        .nav_bank_info:hover .nav_bank_info_btn {
+            color: #6f0bbb !important;
+        }
+    
+        .nav_bank_info_btn:hover i{
+            transform: rotateX(180deg);
+            color: #6f0bbb !important;
+        }
+
+    }
+
+}

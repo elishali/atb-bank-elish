@@ -1,0 +1,945 @@
+
+#banner_btn_2{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #6F0BBB;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: rgba(0,0,0,0)!important;
+    a{
+        text-decoration: none;
+        color: #6F0BBB;
+    }
+}
+
+.Cards_Two{
+    margin: 3rem 0;
+    align-items: center;
+
+    .card_info{
+        margin-top: 2rem;
+        width: 288px;
+        padding: 1rem 1rem;
+        background: linear-gradient(82.08deg,rgba(230,226,233,.5) 2.75%,rgba(251,247,255,.5) 104.31%);
+        border: 0 solid white;
+        border-radius: 10px;
+        text-align: left;
+        margin: 0 1rem ;
+
+        h2{
+            font-size: 20px;
+
+        }
+        p{
+            color: #6F0BBB;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+.second{
+   margin: 3rem 0;
+
+    h4{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    a{
+        color: black;
+        font-weight: bold;
+    }
+
+    .second_fist{
+        border-radius: 15px;
+        background-color: #F4D0001A;
+        min-height: 20px;
+        padding: 35px 34px 40px;
+    }
+
+    .second_second{
+        border-radius: 16px;
+        background-color: rgba(75,153,210,.09);
+        min-height: 20px;
+        padding: 35px 34px 40px;
+    }
+}
+
+.atbcard{
+    .first{
+        border-radius: 15px;
+        padding: 1rem 2rem;
+        background-color: #372E7017;
+        min-height: 220px;
+
+        .atb_text{
+            padding: 2rem 1rem;
+            h2{
+                font-weight: bold;
+                font-size: 24px;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+
+    }
+
+}
+
+.Online_Order{
+    padding: 2rem 2rem;
+    color: black;
+    border-radius: 20px;
+    margin-top: 2rem;
+
+    label{
+        width: 30px;
+    }
+    
+
+    h2{
+        margin-top: 1rem;
+        font-weight: bold;
+        text-align: left;
+    }
+    h4{
+        margin-bottom: 1rem;
+    }
+
+    p{
+        margin-top: 1rem;
+        text-align: left;
+        font-size: 16px;
+    }
+    a{
+        color: black;
+    }
+
+
+    input{
+        padding: 18px 45px 17px 14px;
+        height: 58px;
+        border: 1.5px solid gray;
+        border-radius: 10px;
+        line-height: normal;
+        font-size: 18px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+
+    button{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid #6F0BBB;
+        background-color: #6F0BBB;
+        padding: 1rem 8rem;
+        border-radius: 10px;
+        text-align: center;
+
+    }
+    
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+
+    select{
+        padding: 18px 45px 17px 14px;
+        height: 58px;
+        border: 1.5px solid gray;
+        border-radius: 10px;
+        line-height: normal;
+        font-size: 18px;
+        margin-bottom: 15px;
+        width: 100%;
+
+    }
+
+    .maplink{
+        margin-top: 1rem;
+    }
+
+    #maplink{
+        padding: 18px 16rem 17px 13rem;
+        height: 58px;
+        border: 1.5px solid gray;
+        border-radius: 10px;
+        line-height: normal;
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-decoration: none;
+        color: black;
+        background-color: rgb(210, 204, 204);
+
+
+
+    }
+
+    .deposit_interest{
+        border-radius: 20px;
+        border: 1px solid #6F0BBB;
+        height: 130px;
+        padding: 1.5rem;
+        p{
+            text-align: center;
+            font-size: 20px;
+            color: #6F0BBB;
+            font-weight: bold;
+        }
+    }
+
+
+}
+
+.Rates_Boxs{
+    
+    .Rates_Box{
+        background-color: rgba(75,153,210,.09);
+        border-radius: 15px;
+        margin: 2rem 0;
+        padding: 2rem 2rem;
+        display: block;
+        justify-content: baseline;
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-size: 24px;
+            
+        }
+
+        i{
+            font-size: 3rem;
+            margin-right: 1rem;
+            color: red;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.Online{
+
+    h4{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 2rem 0;
+    }
+    button{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid #9d70c0;
+        background-color: #9d70c0;
+        padding: 1rem 10rem;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 3rem 5rem;
+        width: 100%;
+
+        i{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 20px;
+        }
+
+    }
+
+    #btncredit{
+        width: 40%;
+        color: white;
+        border: 1px solid rgb(171, 163, 163);
+        background-color: rgb(171, 163, 163);
+        padding: .5rem 2rem !important;
+        border-radius: 10px;
+        text-align: center;
+        margin:  0 12rem;
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .top{
+        padding: 1rem 5rem;
+    }
+
+    .main{
+        .input{
+            padding: 4rem 10rem;
+        }
+    }
+
+    input{
+        width: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+        font-size: 20px;
+        border: 1px solid gray;
+        outline-style: none;
+        margin-bottom: 1rem;
+    }
+
+    .cashincard_main{
+        display: none;
+    }
+
+    .depositbox_main{
+        display: none;
+    }
+
+}
+
+.Useful_Info{
+    margin: 3rem 0;
+
+    h4{
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0 0 20px;
+    }
+    button{
+        color: black;
+        font-size: 2rem;
+    }
+
+    .conditions{
+        font-size: 25px;
+        padding: 1rem;
+        border-radius: 15px;
+        border: 1px solid gray;
+        margin-bottom: 1rem;
+
+        .condition_menu{
+            display: none;
+            font-size: 16px;
+            h2{
+                font-size: 16px;
+                font-weight: bold;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            i{
+                font-size: 3rem;
+                margin-right: 1rem;
+                color: red;
+            }
+
+        }
+    }
+
+
+    .KOB_credit{
+        font-size: 25px;
+        padding: 1rem;
+        border-radius: 15px;
+        border: 1px solid gray;
+        margin-bottom: 1rem;
+
+        .KOB_menu{
+            display: none;
+            a{
+                text-decoration: none;
+                color: #6F0BBB;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                display: block;
+            }
+        }
+    }
+
+    
+    .interest_rates{
+        font-size: 25px;
+        padding: 1rem;
+        border-radius: 15px;
+        border: 1px solid gray;
+        margin-bottom: 1rem;
+
+        .interest_rates_menu{
+            display: none;
+            font-size: 16px;
+            h2{
+                font-size: 16px;
+                font-weight: bold;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            i{
+                font-size: 3rem;
+                margin-right: 1rem;
+                color: red;
+            }
+            padding: 1rem;
+            table{
+                tr{
+                    th{
+                        padding: 1rem;
+                        padding-right: 17rem;
+                        border-top: 2px dashed gray;
+                        border-bottom: 2px dashed gray;
+                    }
+                    td{
+                        padding: 1rem;
+                        border-bottom: 2px dashed gray;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    .requirements{
+        font-size: 25px;
+        padding: 1rem;
+        border-radius: 15px;
+        border: 1px solid gray;
+        margin-bottom: 1rem;
+
+        .requirements_menu{
+            display: none;
+            font-size: 16px;
+            h2{
+                font-size: 16px;
+                font-weight: bold;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            i{
+                font-size: 3rem;
+                margin-right: 1rem;
+                color: red;
+            }
+
+        }
+    }
+
+
+
+}
+
+.sms_main{
+    font-size: 16px;
+    a{
+        color: #000000;
+        font-weight: bold;
+    }
+
+    #web_site{
+        text-decoration: none;
+    }
+}
+
+.info{
+    p{
+        font-size: 16px;
+        color: #999999;
+    }
+}
+
+.initial_application{
+
+    h2{
+        margin-bottom: 2rem;
+    }
+
+    a{
+        color: black;
+    }
+
+    button{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid #6F0BBB;
+        background-color: #6F0BBB;
+        padding: 1rem 8rem;
+        border-radius: 10px;
+        text-align: center;
+
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+
+    form{
+        padding: 18px 45px 17px 14px;
+        height: 58px;
+        border: 1.5px solid gray;
+        border-radius: 10px;
+        line-height: normal;
+        font-size: 18px;
+        margin-bottom: 15px;
+        width: 100%;
+
+        label{
+            font-size: 18px;
+            color: #999999;
+        }
+
+        input{
+            color: transparent;
+        }
+
+    }
+
+    .inputs{
+        padding: 18px 45px 17px 14px;
+        height: 58px;
+        border: 1.5px solid gray;
+        border-radius: 10px;
+        line-height: normal;
+        font-size: 18px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    select{
+        padding: 18px 45px 17px 14px;
+        height: 58px;
+        border: 1.5px solid gray;
+        border-radius: 10px;
+        line-height: normal;
+        font-size: 18px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .cash_order_last{
+        label{
+            width: 30px;
+        }
+        
+    
+        p{
+            margin-top: 1rem;
+            text-align: left;
+            font-size: 16px;
+        }
+
+    
+        input{
+            padding: 18px 45px 17px 14px;
+            height: 58px;
+            border: 1.5px solid gray;
+            border-radius: 10px;
+            line-height: normal;
+            font-size: 18px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+    
+    
+
+
+    }
+
+
+}
+
+.link{
+
+    #doc{
+        color: #3b5998;
+        font-size: 3rem;
+    }
+    a{
+        text-decoration: none;
+        color: #000000;
+        font-size: 18px;
+        margin-left: 1rem;
+    }
+
+}
+
+.Superiority{
+    padding: 2rem;
+    .Superiority_Top{
+        padding: 2rem;
+        .tittle{
+            text-align: center;
+            margin-bottom: 2rem;
+            p{
+                color: #6F0BBB;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+
+        .tittle_to{
+            margin-bottom: 2rem;
+
+            h4{
+                color: #6F0BBB;
+                font-size: 20px;
+                margin-left: 2rem;
+            }
+            p{
+                color: #6F0BBB;
+                font-size: 20px;
+                font-weight: bold;
+                display: inline;
+                padding: 1rem 8rem;
+
+            }
+        }
+
+        .tittle_table{
+            margin-bottom: 2rem;
+            p{
+                color: #6F0BBB;
+                font-size: 20px;
+                font-weight: bold;
+                display: inline;
+                padding: 1rem;
+
+            }
+        }
+
+        .tables{
+            border-bottom: 1px dashed gray;
+            border-top: 1px dashed gray;
+
+            h4{
+                margin-left: 2rem;
+                font-weight: normal;
+            }
+            p{
+                margin-left: 15rem;
+            }
+        }
+
+        table{
+            tr{
+                td{
+                    font-size: 20px;
+                    border-bottom: 1px dashed gray;
+                    border-top: 1px dashed gray;
+                    padding-left: 2rem;
+                    padding-right: 12rem;
+                    
+                }
+
+            }
+        }
+    }
+
+}
+
+.Info_deposit_box{
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+    border-radius: 16px;
+    background-color: rgba(75,153,210,.09);
+    min-height: 20px;
+}
+
+.deposit_box_main{
+    h2{
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .tittle_boxs{
+        border-bottom: 2px dotted gray;
+        p{
+            color: #6F0BBB;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+
+    .main_boxs{
+        border-bottom: 2px dotted gray;
+        p{
+            font-size: 18px;
+            padding: .5rem;
+            margin: .5rem;
+        }
+
+        .box_left{
+            border-bottom: 2px dotted gray;
+        }
+    }
+}
+
+.main_3d{
+    margin: 2rem 0;
+    p{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.cards_bank_info{
+    text-align: center;
+    min-height: 200px !important;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    i{
+        font-size: 3rem;
+        color: rgb(70, 68, 68);
+    }
+}
+
+
+
+.login_container{
+
+    width: 1008px;
+    margin: 0 auto;
+}
+
+.login{
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    .login_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3rem 2rem 1rem;
+
+        .login_lang{
+            a{
+                text-decoration: none;
+                color: #E0E0E0;
+                font-size: 14px;
+                font-family: montserrat;
+                font-weight: bold;
+
+                &:hover{
+                    color: #FFFFFF;
+                }
+            }
+
+            .selected_lang{
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .all_content{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+
+        .left_content{
+            width: 504px;
+            height: 600px;
+            background-color: #FAFAFA;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            box-shadow: -8px 3px 12px 4px rgba(0,0,0,0.08);
+
+            .disp-none{
+                display: none;
+            }
+
+            .box{
+                width: 320px;
+                margin: 6rem auto 0;
+
+                p{
+                    font-size: 18px;
+                    font-family: montserrat;
+                    font-weight: bold;
+                }
+
+                img{
+                    width: 320px;
+                    border-radius: 10px;
+                }
+
+            }
+
+            .card_control{
+                width: 10%;
+                margin: 3rem auto 0;
+                display: flex;
+
+                span{
+                    cursor: pointer;
+                    width: 14px !important;
+                    height: 14px !important;
+                    margin: 0 2px;
+                    background-color: #FFFFFF;
+                    border-radius: 100%;
+                    border: 1px solid #BABABA;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+
+                .selected_card{
+                    background-color: #6F0BBB;
+                }
+            }
+        }
+
+        .right_content{
+            width: 505px;
+            height: 600px;
+            background-color: #FFFFFF;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            box-shadow: -8px 3px 12px 4px rgba(0,0,0,0.08);
+            padding: 0 4rem;
+
+            p{
+                font-size: 20px;
+                font-family: montserrat;
+                font-weight: bold;
+                margin: 6rem 0 2rem;
+            }
+
+            form{
+                .login_input{
+                    position: relative;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        width: 0;
+                        height: 2px;
+                        background-color: #6F0BBB;
+                        transition: 0.5s;
+                    }
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 50%;
+                        width: 0;
+                        height: 2px;
+                        background-color: #6F0BBB;
+                        transition: 0.5s;
+                    }
+
+                    &:hover::before{
+                        width: 50%;
+                    }
+
+                    &:hover::after{
+                        width: 50%;
+                    }
+
+                    input{
+                        display: block;
+                        margin-bottom: 1rem;
+                        padding: 1rem 0;
+                        width: 100%;
+                        font-size: 16px;
+                        font-family: montserrat;
+                        outline-style: none;
+                        border: none;
+                        border-bottom: 3px solid #FAFAFA;
+                    }
+
+                    .error{
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 0;
+                        width: 6%;
+                        cursor: pointer;
+                    }
+
+                    img{
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 0;
+                    }
+                }
+
+                button{
+                    position: relative;
+                    margin-top: 2rem;
+                    font-size: 16px;
+                    font-family: montserrat;
+                    font-weight: bold;
+                    color: #FFFFFF;
+                    background-color: #6F0BBB;
+                    border-radius: 5px;
+                    outline-style: none;
+                    border: none;
+                    height: 64px;
+                    width: 100%;
+
+                    i{
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 25px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .forgotten{
+                font-size: 12px;
+                font-family: montserrat;
+                font-weight: bold;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                margin-top: 20px;
+            }
+
+            .register{
+                font-size: 12px;
+                font-family: montserrat;
+                font-weight: bold;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                margin: 4px 0 0;
+            }
+        }
+    }
+}
+
+

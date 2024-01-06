@@ -1,0 +1,1221 @@
+
+
+.slider {
+    .slider-container {
+        width: 100%;
+        height: 470px;
+        position: relative;
+        margin: auto;
+    
+        img{
+            width: 100%;
+            height: 470px;
+        }
+    }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -20px;
+    color: #6F0BBB;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 80%;
+    text-align: left;
+    top: 38%;
+    left: 17%;
+    h2{
+        font-size: 40px;
+        font-weight: 800;
+        line-height: normal;
+    }
+    p{
+        font-size: 40px;
+        line-height: normal;
+    }
+
+
+    button{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid #6F0BBB;
+        background-color: #6F0BBB;
+        padding: 1rem 6rem;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 1rem;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+
+  
+
+  
+
+}
+#atbfriday{
+    color: white !important;
+}
+
+.Cards{
+    margin-top: 3rem;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .cards{
+        margin-top: 2rem;
+        min-height: 350px;
+        padding: 57px 0 26px;
+        background: linear-gradient(82.08deg,rgba(230,226,233,.5) 2.75%,rgba(251,247,255,.5) 104.31%);
+        border: 0 solid white;
+        border-radius: 10px;
+        text-align: left;
+        transition: .5s;
+
+        .cards__item-image{
+            margin: 0 1rem;
+        }
+        h2{
+            margin: 1rem;
+            font-weight: bold;
+        }
+        p{
+            font-size: 18px;
+            margin: 1rem;
+        }
+    }
+
+    .tocard{
+        min-height: 390px ;
+    }
+
+    .cards:hover{
+        cursor: pointer;
+        margin-top: 0;
+        box-shadow: 5px 10px #dcd8d8;
+        border: 2px solid white;
+    }
+    
+}
+
+.Calculation{
+    margin-top: 5rem;
+    text-align: center;
+
+    label{
+        width: 30px;
+    }
+ 
+
+    button.subscribe{
+        background: none;
+        overflow: hide;
+        border: 0 solid white;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    i{
+        font-size: 3rem;
+    }
+
+    #cash{
+        background-color: #6F0BBB;
+        padding: 1rem 2rem;
+        color: white;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    #deposit{
+        background-color: #f3f3f3;
+        padding: 1rem 2rem;
+        color: black;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    .cash_main{
+        display: block;
+
+        label{
+            width: 30px;
+        }
+
+        h2{
+            margin-top: 3rem;
+            font-weight: bold;
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+
+        .cash{
+            .cash_left{
+                background-color: #f3f3f3;
+                padding: 2rem 2rem;
+                color: black;
+                border-radius: 20px;
+                height: 440px;
+
+
+                .main{
+                    position: relative;
+                    margin-bottom: 2rem;
+                    
+                    p{
+                        position: absolute;
+                        top: 100%;
+                        font-size: 16px;
+                        color: #818181;
+                    }
+            
+                    .input{
+                        
+                        input{
+                            width: 100%;
+                            padding: 1.5rem;
+                            border-radius: 10px;
+                            font-size: 20px;
+                            border: 1px solid #6F0BBB;
+                            outline-style: none;
+                            position: relative;
+                        }
+                        p{
+                            position: absolute;
+                            top:  10%;
+                            font-size: 16px;
+                            margin: 0 0 1rem 1rem ;
+                        }
+    
+                    }
+            
+                    .range{
+                        position: absolute;
+                        top: 90%;
+                        width: 95%;
+                        margin-left: 1rem;
+
+                        
+                        input{
+                            width: 100%;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .main_last{
+                    a{
+                        color: black;
+                    }
+                    span{
+                        width: 2rem;
+                    }
+
+                }
+            }
+
+            .cash_right{
+                border-radius: 20px;
+                border: 1px solid black;
+                padding: 2rem;
+                width: 30%;
+                margin-left: 1rem;
+                border-radius: 20px;
+                height: 439px;
+
+                p{
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: .5rem !important;
+                    text-align: center;
+                }
+                
+                .info{
+                    border: 1px solid black;
+                    border-radius: 20px;
+                    width: 300px;
+                    height: 80px;
+                    padding: 1rem;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    p{
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin-bottom: .5rem !important;
+                    }
+                    h2{
+                        font-size: 20px;
+                        margin-top: .5rem !important;
+                        text-align: center;
+                    }
+
+                }
+
+                .button{
+                    text-align: center;
+
+                    button{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 500;
+                        border: 1px solid #6F0BBB;
+                        background-color: #6F0BBB;
+                        padding: 1rem 6rem;
+                        border-radius: 10px;
+                        text-align: center;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .deposit_main{
+        display: none;
+        h2{
+            margin-top: 3rem;
+            font-weight: bold;
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+
+        .deposit{
+
+            background-color: #f3f3f3;
+            padding: 2rem 2rem;
+            color: black;
+            border-radius: 20px;
+            height: 300px;
+            margin-top: 2rem;
+
+            select{
+                padding: 18px 45px 17px 14px;
+                height: 58px;
+                border: 1.5px solid var(--br-gray-input);
+                border-radius: 10px;
+                line-height: normal;
+                font-size: 18px;
+                margin-bottom: 15px;
+                width: 100%;
+            }
+            input{
+                padding: 18px 45px 17px 14px;
+                height: 58px;
+                border: 1.5px solid var(--br-gray-input);
+                border-radius: 10px;
+                line-height: normal;
+                font-size: 18px;
+                margin-bottom: 15px;
+                width: 100%;
+            }
+
+
+    
+    
+            
+        }
+
+        .deposit_interest{
+            background-color: #f3f3f3;
+            border-radius: 20px;
+            border: 1px solid #6F0BBB;
+            text-align: center;
+            height: 130px;
+            padding: 1.5rem;
+            p{
+                font-size: 20px;
+                color: #6F0BBB;
+                font-weight: bold;
+            }
+        }
+
+        button.subscribe{
+            background: none;
+            overflow: hide;
+            border: 0 solid white;
+        }
+
+        .button_deposit{
+            button{
+                background: #6F0BBB;
+                color: white ;
+                padding: .5rem 3rem;
+                border-radius: 10px;
+                border: 1px solid #6F0BBB;
+                font-size: 20px;
+            }
+        }
+
+
+
+    }
+
+    .cash_order{
+        background-color: #f3f3f3;
+        padding: 2rem 2rem;
+        color: black;
+        border-radius: 20px;
+        display: none;
+        margin-top: 2rem;
+
+        h2{
+            margin-top: 1rem;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        p{
+            margin-top: 1rem;
+            text-align: left;
+        }
+
+        input{
+            padding: 18px 45px 17px 14px;
+            height: 58px;
+            border: 1.5px solid var(--br-gray-input);
+            border-radius: 10px;
+            line-height: normal;
+            font-size: 18px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        select{
+            padding: 18px 45px 17px 14px;
+            height: 58px;
+            border: 1.5px solid var(--br-gray-input);
+            border-radius: 10px;
+            line-height: normal;
+            font-size: 18px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        button{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            border: 1px solid #6F0BBB;
+            background-color: #6F0BBB;
+            padding: 1rem 8rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+
+    }
+
+    .deposit_order{
+        background-color: #f3f3f3;
+        padding: 2rem 2rem;
+        color: black;
+        border-radius: 20px;
+        margin-top: 2rem;
+        display: none;
+
+        h2{
+            margin-top: 1rem;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 1rem !important;
+        }
+
+        p{
+            margin-top: 1rem;
+            text-align: left;
+        }
+
+        input{
+            padding: 18px 45px 17px 14px;
+            height: 58px;
+            border: 1.5px solid var(--br-gray-input);
+            border-radius: 10px;
+            line-height: normal;
+            font-size: 18px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        select{
+            padding: 18px 45px 17px 14px;
+            height: 58px;
+            border: 1.5px solid var(--br-gray-input);
+            border-radius: 10px;
+            line-height: normal;
+            font-size: 18px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        button{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            border: 1px solid #6F0BBB;
+            background-color: #6F0BBB;
+            padding: 1rem 8rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+
+    }
+
+
+}
+
+.Currency{
+    margin-top: 5rem;
+
+    .currency_exchange{
+        width: 100%;
+        background-color: rgba(250, 244, 244, 0.978);
+        padding: 2rem;
+        border: 0 solid white;
+        border-radius: 10px;
+
+        h2{
+            font-size: 30px;
+            line-height: 1.2083;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        .update{
+            p{
+                font-size: 16px;
+                color: #8f8f8f;
+            }
+            a{
+                text-decoration: none;
+                font-size: 14px;
+                color: #8f8f8f;
+            }
+        }
+
+        .exchangerates-table{
+            table{
+                thead{
+                    th{
+                        font-size: 20px;
+                        color: #6F0BBB;
+                        vertical-align: middle;
+                        padding: 1rem 2.8rem  0 2.8rem ;
+                        font-size: inherit;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+
+                tbody{
+
+                    td{
+                        vertical-align: middle;
+                        padding: 1rem 2.8rem 0 2.8rem;
+                        font-size: inherit;
+                        text-align: left;
+                        font-size: 20px;
+                        color: black;
+                        
+                    }
+                    .currency{
+                        font-weight: bold;
+                    }
+                    #vl{
+                        border-right: 1px solid #d0d0d0;
+                    }
+
+                }
+            }
+        }
+
+
+    }
+
+    .currency_calc{
+        width: 100%;
+        background-color: rgba(250, 244, 244, 0.978);
+        padding: 4.8rem;
+        border: 0 solid white;
+        border-radius: 10px;
+
+        h2{
+            font-size: 30px;
+            line-height: 1.2083;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        .currency_info{
+            margin-bottom: 1rem;
+        }
+
+        .cross_arrow{
+            width: 5%;
+
+            i{
+                color: #6F0BBB;
+                font-size: 20px;
+                margin-top: 26px;
+                margin-left: 10px;
+            }
+        }
+
+        #amount-one{
+            padding: 1.2rem 1rem;
+            width: 200px;
+            border-radius: 10px;
+            outline-style: none;
+            border: 1px solid #E6E6E6;
+            font-size: 20px;
+            
+            
+        }
+        
+        #amount-two{
+            padding: 1.2rem 1rem;
+            width: 200px;
+            border-radius: 10px;
+            outline-style: none;
+            border: 1px solid #E6E6E6;
+            font-size: 20px;
+            
+        }
+
+        #currency_calculation-one{
+            margin-top: 1.5rem;
+            font-size: 16px;
+            border: none;
+        }
+        #currency_calculation-two{
+            margin-top: 1.5rem;
+            font-size: 16px;
+            border: none;
+        }
+
+    }
+}
+
+.Usefull_Card{
+    margin-top: 5rem;
+    img{
+        width: 100%;
+    }
+    .Usefull_Card_One{
+        width: 100%;
+        background-color: rgba(75,153,210,.09);
+        padding: 1rem 2rem;
+        border: 0 solid white;
+        border-radius: 10px;
+
+        h2{
+            font-size: 30px;
+            line-height: 1.2083;
+            margin-bottom: 6px;
+            font-weight: bold;
+            margin-bottom: 5rem;
+        }
+        a{
+            color:#6F0BBB;
+            background: #ffc107;
+            border: 5px solid #ffc107;
+            border-radius: 10px;
+            padding: .5rem 3rem;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    }
+    .Usefull_Card_Two{
+        width: 100%;
+        background-color: transparent;
+        background-image: linear-gradient(90deg, #000000 0%, #88888888 50%);
+        min-height: 20px;
+        padding: 1rem 2rem;
+        border: 0 solid white;
+        border-radius: 10px;
+
+        h2{
+            font-size: 30px;
+            line-height: 1.2083;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 7rem;
+        }
+
+        a{
+            color:white;
+            background: black;
+            border: 5px solid black;
+            border-radius: 10px;
+            padding: .5rem 3rem;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+    }
+}
+
+.News{
+    margin-top: 5rem;
+
+    h2{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    .news_box{
+        background-color: hsla(40, 37%, 91%, 0.961);
+        padding: 1.5rem;
+        border: 0 solid white;
+        border-radius: 10px;
+        width: auto;
+        height: 300px;
+        h3{
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 14px;
+                font-style: italic;
+                margin-top: 7px;
+            }
+        }
+
+        p{
+            font-size: 16px;
+        }
+    }
+
+    .all_news_box{
+        background-color: hsla(40, 37%, 91%, 0.961);
+        padding: 1.5rem;
+        border: 0 solid white;
+        border-radius: 10px;
+
+        i{
+            font-size: 5rem;
+            
+        }
+
+        h3{
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .all_news_box:hover{
+        i{
+            margin-left: 2rem;
+        }
+    }
+
+
+}
+
+#chatbtn{
+    i{
+        font-size: 30px;
+        color: white;
+        padding: 16px;
+        background-color: #6F0BBB;
+        box-shadow: 10px 10px 33px 0 rgba(0,0,0,.15);
+        border-radius: 100%;
+        cursor: pointer;
+        position: fixed;
+        bottom: 10%;
+        right: 2%;
+
+    }
+    button.subscribe{
+        background: none;
+        color: white ;
+        font-weight: 900;
+        overflow: auto;
+        border: 0 solid white;
+        margin-left: 0.5rem;
+    }
+
+}
+
+button.subscribe{
+    background: none;
+    color: white ;
+    font-weight: 900;
+    overflow: auto;
+    border: 0 solid white;
+    margin-left: 0.5rem;
+}
+
+.chat_main{
+    display: none;
+
+    #wpbtn{
+
+        i{
+            font-size: 30px;
+            color: white;
+            padding: 16px;
+            background-color: #29b200;
+            box-shadow: 10px 10px 33px 0 rgba(0,0,0,.15);
+            border-radius: 100%;
+            cursor: pointer;
+            position: fixed;
+            bottom: 30%;
+            right: 2%;
+        }
+    
+    }
+    
+    #msbtn{
+    
+        i{
+            font-size: 30px;
+            color: white;
+            padding: 16px;
+            background-color: #3b5998;
+            box-shadow: 10px 10px 33px 0 rgba(0,0,0,.15);
+            border-radius: 100%;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20%;
+            right: 2%;
+        }
+    
+    }
+    
+    #closebtn{
+    
+        i{
+            font-size: 30px;
+            color: gray;
+            padding: 16px;
+            background-color: white;
+            box-shadow: 10px 10px 33px 0 rgba(0,0,0,.15);
+            border-radius: 100%;
+            cursor: pointer;
+            position: fixed;
+            bottom: 10%;
+            right: 2%;
+        }
+    
+    }
+}
+
+.Online_Request{
+    color: black;
+    border-radius: 20px;
+    margin-top: 3rem;
+    justify-content: center;
+    h2{
+        margin-top: 1rem;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    p{
+        margin-top: 1rem;
+        text-align: left;
+        margin-left: 0;
+    }
+    label{
+       width: 30px;
+    }
+
+    input{
+        padding: 18px 45px 17px 14px;
+        height: 58px;
+        border: 1.5px solid gray;
+        border-radius: 10px;
+        line-height: normal;
+        font-size: 18px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    button{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid #6F0BBB;
+        background-color: #6F0BBB;
+        padding: 1rem 8rem;
+        border-radius: 10px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+}
+
+.Usefull_Card{
+    
+    h2{
+        font-size: 30px;
+        line-height: 1.2083;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.2083;
+        margin-bottom: 3rem;
+    }
+    a{
+        color:white;
+        background: #34035d;
+        border: 5px solid #34035d;
+        border-radius: 10px;
+        padding: .5rem 3rem;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .Usefull_Card_Third{
+        width: 100%;
+        background: #d0adc3;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #ece9e6, #d0adc3);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #ece9e6, #d0adc3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 1rem 3rem;
+        border: 0 solid white;
+        border-radius: 10px;
+    }
+
+    .Usefull_Card_Four{
+        width: 100%;
+        background: #d0adc3;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #ece9e6, #d0adc3);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #ece9e6, #d0adc3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 1rem 3rem;
+        border: 0 solid white;
+        border-radius: 10px;
+    }
+}
+
+.other_page_banner{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    margin: auto;
+
+    img{
+        width: 100%;
+        height: 450px;
+    }
+
+    .text {
+        color: black;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 80%;
+        text-align: left;
+        top: 35%;
+        left: 8%;
+        h2{
+            font-size: 40px;
+            font-weight: 800;
+            line-height: normal;
+        }
+        p{
+            font-size: 40px;
+            line-height: normal;
+        }
+    
+    
+        button{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            border: 1px solid #34035d;
+            background-color: #34035d;
+            padding: 1rem 4rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            align-items: start;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+      }
+}
+
+.other_page_banner_2{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-top: 7rem;
+
+    img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .text {
+        color: black;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 70%;
+        text-align: left;
+        left: 8%;
+        h2{
+            font-size: 40px;
+            font-weight: 800;
+            line-height: normal;
+
+        }
+        p{
+            font-size: 40px;
+            line-height: normal;
+        }
+    
+    
+        button{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            border: 1px solid #34035d;
+            background-color: #34035d;
+            padding: 1rem 4rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            align-items: start;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    .text_sms{
+        color: black;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 4rem;
+        width: 80%;
+        text-align: left;
+        left: 8%;
+        h2{
+            font-size: 40px;
+            font-weight: 800;
+            line-height: normal;
+            display: inline;
+
+        }
+        p{
+            font-size: 40px;
+            line-height: normal;
+            display: inline;
+        }
+
+        #web_site{
+            text-decoration: none;
+        }
+
+    }
+
+}
+
+.Info_Main{
+    margin: 2rem 0;
+    h2{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    li{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.Superiority{
+    margin: 2rem 0;
+
+    h4{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    h2{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    p{
+        font-size:20px;
+        line-height: 1.2222;
+        margin-top: 20px;
+    }
+    a{
+        color: #000000;
+        font-weight: bold;
+    }
+    .Superiority_Top{
+        background-color: #372E7017;
+        min-height: 180px;
+        padding: 35px 34px 40px;
+        border-radius: 15px;
+        background-size: cover;
+    }
+
+    .Superiority_Bottom{
+        margin-top: 2rem;
+
+        .Superiority_One{
+            border-radius: 15px;
+            background-color: #F4D0001A;
+            min-height: 20px;
+            padding: 35px 34px 40px;
+        }
+
+        .Superiority_Two{
+            border-radius: 16px;
+            background-color: rgba(75,153,210,.09);
+            min-height: 20px;
+            padding: 35px 34px 40px;
+
+
+            i{
+                font-size: 3rem;
+                color: brown;
+                margin-bottom: 1rem;
+            }
+
+            #doc{
+                color: #3b5998;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            ul{
+                margin-top: 1rem;
+                font-size: 18px;
+            }
+
+        }
+
+        #profitable{
+            background: #6F0BBB;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3c1053, #6F0BBB);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #3c1053, #6F0BBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+            color: white;
+        }
+        #insurance{
+            background: #6F0BBB;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3c1053, #6F0BBB);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #3c1053, #6F0BBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
+            color: white;
+        }
+    }
+
+}
+
+.Rates{
+    margin: 3rem 0;
+    font-size: 16px;
+    h2{
+        font-weight: bold;
+    }
+    table{
+        margin-left: 7rem;
+    }
+    .tabel_tittle{
+        color: #6f0bbb;
+    }
+    td{
+        border-bottom: 1px dashed grey;
+        padding: 1rem 2rem;
+    }
+    
+}
+
+.Open_Account{
+    background-color: rgba(75,153,210,.09);
+    padding: 35px 34px 40px;
+    border-radius: 15px;
+
+    .text{
+        margin: 2rem 0;
+        font-size: 18px;
+        color: black;
+        a{
+            color: black;
+        }
+
+        button{
+            padding: 1rem 2rem;
+            background-color: #34035d;
+            border-radius: 15px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            
+
+        }
+    }
+}
+

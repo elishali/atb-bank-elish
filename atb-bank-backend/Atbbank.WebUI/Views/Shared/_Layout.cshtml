@@ -1,13 +1,568 @@
 ﻿<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-</head>
-<body>
-    <div>
-        @RenderBody()
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azər Türk Bank | @ViewBag.Title</title>
+    <meta
+      name="description"
+      content="“Azər Türk Bank” ASC etibarlı biznes tərəfdaşı olaraq ölkə iqtisadiyyatının real sektoruna maliyyə dəstəyi verir və müasir bank texnologiyalarını tətbiq edərək operativ xidmət göstərir"
+    />
+    <link rel="canonical" href="https://atb.az/" />
+    <meta property="og:locale" content="az_AZ" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Azər Türk Bank - Sizin Dövlət Bankınız"
+    />
+    <meta
+      property="og:description"
+      content="“Azər Türk Bank” ASC etibarlı biznes tərəfdaşı olaraq ölkə iqtisadiyyatının real sektoruna maliyyə dəstəyi verir və müasir bank texnologiyalarını tətbiq edərək operativ xidmət göstərir"
+    />
+    <meta property="og:url" content="https://atb.az/" />
+    <meta property="og:site_name" content="Azər Türk Bank" />
+    <meta
+      property="article:modified_time"
+      content="2023-11-24T06:25:37+00:00"
+    />
+    <meta
+      property="og:image"
+      content="https://atb.az/wp-content/plugins/atb-core/assets/success.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/images/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <button
+        class="burger-btn"
+        type="button"
+        id="burger-btn"
+        style="display: none"
+      >
+        <span class="menu-btn__line"></span>
+        <span class="menu-btn__line"></span>
+        <span class="menu-btn__line"></span>
+        <span class="menu-btn__close"></span>
+      </button>
+
+      <div class="grid-container-header">
+        <div class="item-1" id="firstpartheader">
+          <a href="./index.html">
+            <img src="./assets/images/logo.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="item-2" id="secondpartheader">
+          <ul id="navigation-menu-up" class="navigation-menu-up">
+            <li><a href="./index.html">FƏRDİ</a></li>
+            <li><a href="./business.html">BİZNES</a></li>
+            <li><a href="./KOB.html">KOB</a></li>
+          </ul>
+        </div>
+
+        <div class="nav item-3">
+          <div class="grid-container-item-3">
+            <div class="item-3-one">
+              <div class="nav_main">
+                <button class="nav_btn subscribe">KREDİTLƏR</button>
+                <div class="nav_content">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <span class="menu-item__title">kreditlər</span>
+                      <a class="child_main" href="./consumption_credit.html"
+                        >istehlak krediti</a
+                      >
+                      <a class="child_main" href="./atb_card_credit.html"
+                        >atb card kredit</a
+                      >
+                      <a class="child_main" href="./deposit_credit.html"
+                        >əmanət qarşılığında kredit</a
+                      >
+                    </div>
+                    <div class="col-lg-6">
+                      <span class="menu-item__title">faydalı</span>
+                      <a href="./rates.html">tariflər</a>
+                      <a href="./credit_and_card_payment.html"
+                        >kredit və kart ödənişləri</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-3-two">
+              <div class="nav_main">
+                <button class="nav_btn subscribe">KARTLAR</button>
+                <div class="nav_content">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <span class="menu-item__title">kartlar</span>
+                      <a class="child_main" href="./atb_card.html">atb card</a>
+                      <a class="child_main" href="./atb_card_credit.html"
+                        >atb card kredit</a
+                      >
+                      <a class="child_main" href="./atb_card_premium.html"
+                        >atb card premium</a
+                      >
+                      <a class="child_main" href="./atb_junior.html"
+                        >atb junior</a
+                      >
+                      <a class="child_main" href="https://old.atb.az/cb/">cashback</a>
+                    </div>
+                    <div class="col-lg-6">
+                      <span class="menu-item__title">faydalı</span>
+                      <a href="./rates.html">tariflər</a>
+                      <a href="./sms.html">sms bildirişi</a>
+                      <a href="./services_of_card.html"
+                        >kartlar üzrə xidmətlər</a
+                      >
+                      <a href="./restrictions.html"
+                        >kart əməliyyatlarında məhdudiyyətlər</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-3-there">
+              <div class="nav_main">
+                <button class="nav_btn subscribe">İPOTEKA</button>
+                <div class="nav_content">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <span class="menu-item__title">ipoteka</span>
+                      <a class="child_main" href="./mortgage.html"
+                        >ipoteka krediti</a
+                      >
+                      <a class="child_main" href="./good_mortage.html"
+                        >güzəştli ipoteka krediti</a
+                      >
+                      <a class="child_main" href="./MIDA.html"
+                        >"MİDA" MMC xətti ilə güzəştli ipoteka krediti</a
+                      >
+                    </div>
+                    <div class="col-lg-6">
+                      <span class="menu-item__title">faydalı</span>
+                      <a href="./rates.html">tariflər</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-3-four">
+              <div class="nav_main">
+                <button class="nav_btn subscribe">ƏMANƏTLƏR</button>
+                <div class="nav_content">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <span class="menu-item__title">əmanətlər</span>
+                      <a class="child_main" href="./classic_deposit.html"
+                        >klassik əmanət</a
+                      >
+                    </div>
+                    <div class="col-lg-6">
+                      <span class="menu-item__title">faydalı</span>
+                      <a href="./rates.html">tariflər</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-3-five">
+              <div class="nav_main">
+                <button class="nav_btn subscribe">ONLAYN</button>
+                <div class="nav_content">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <span class="menu-item__title">onlayn</span>
+                      <a class="child_main" href="./reference.html"
+                        >arayışın onlayn sifarişi</a
+                      >
+                      <a class="child_main" href="./update_card.html"
+                        >kartın yenilənməsi</a
+                      >
+                      <a class="child_main" href="./atb360.html">atb 360</a>
+                      <a class="child_main" href="./apple_pay.html"
+                        >Apple Pay</a
+                      >
+                      <a class="child_main" href="./google_pay.html"
+                        >Google Pay</a
+                      >
+                    </div>
+                    <div class="col-lg-6">
+                      <span class="menu-item__title">faydalı</span>
+                      <a href="./rates.html">tariflər</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-3-six">
+              <div class="nav_main">
+                <button class="nav_btn subscribe">DİGƏR</button>
+                <div class="nav_content">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <span class="menu-item__title">xidmətlər</span>
+                      <a class="child_main" href="./depozit_boxs.html"
+                        >depozit qutuları</a
+                      >
+                      <a class="child_main" href="./exchange_method.html"
+                        >valyuta mübadiləsi əməliyyatları</a
+                      >
+                      <a class="child_main" href="./correspondent_account.html"
+                        >müxbir hesablara xidmət</a
+                      >
+                      <a
+                        class="child_main"
+                        href="settlement_cashier_service.html"
+                        >hesablaşma-kassa xidməti</a
+                      >
+                    </div>
+                    <div class="col-lg-6">
+                      <span class="menu-item__title">faydalı</span>
+                      <a href="./rates.html">tariflər</a>
+                      <a href="./3d_secure.html">3D secure</a>
+                      <a href="https://bankmarket.az/home">bank market</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-4" id="latestheader">
+          <div class="row latestnav">
+            <div class="col-lg-1">
+              <button class="subscribe" id="searchbtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="col-lg-3">
+              <a href="./atb360.html" id="atb360">atb 360</a>
+            </div>
+            <div class="col-lg-1">
+              <div class="lang" onclick="changelang()">
+                <a href="#" id="AZE">AZE</a>
+                <a href="#" class="d-none" id="ENG">ENG</a>
+                <a href="#" class="d-none" id="RUS">RUS</a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="nav_bank_info">
+                <button class="nav_bank_info_btn subscribe">
+                  BANK HAQQINDA <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="nav_bank_info-content">
+                  <a href="./bank_information.html">bank məlumatları</a>
+                  <a href="https://atb.az/career/">karyera mərkəzi</a>
+                  <a href="https://atb.az/reports/"
+                    >məlumatların açıqlaması</a
+                  >
+                  <a href="https://atb.az/news/">xəbərlər</a>
+                  <a href="https://atb.az/cc/">bankla əlaqə</a>
+                  <a href="https://atb.az/feedback/">irad və təklflər</a>
+                  <a href="https://atb.az/filial/">filiallar</a>
+                  <a href="https://atb.az/tehlukesizliyiniz/">təhlükəsizliyiniz</a>
+                  <a href="https://atb.az/xeyriyyecilik/">xeyriyyəçilik</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <a href="tel:945"
+                ><i class="fa-solid fa-phone-volume"></i> 945
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="slider">
+      <div class="slider-container">
+        <div class="mySlides fades">
+          <img src="./assets/images/slider1.png" style="width: 100%" />
+          <div class="text">
+            <h2>
+              atb junior <br />
+              kartı
+            </h2>
+            <p>övladınızın özünə aid kartı olsun</p>
+            <button class="slider_btn subscribe">
+              <a href="./atb_junior.html">sifariş</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="mySlides fades">
+          <img src="./assets/images/slider2.png" style="width: 100%" />
+          <div class="text">
+            <h2>
+              atb card <br />
+              kredit
+            </h2>
+            <p>10 000 AZN-dək kredit xətti</p>
+            <button class="slider_btn subscribe">
+              <a href="./atb_card.html">sifariş</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="mySlides fades">
+          <img src="./assets/images/slider3.png" style="width: 100%" />
+          <div class="text">
+            <h2 id="atbfriday">
+              atbfriday <br />
+              istehlak kreditləri <br />
+              11.5%-dən başlayaraq
+            </h2>
+            <button class="slider_btn subscribe">
+              <a href="./atb_friday.html">sifariş</a>
+            </button>
+          </div>
+        </div>
+        <div class="mySlides fades">
+          <img src="./assets/images/slider4.png" style="width: 100%" />
+          <div class="text">
+            <h2>
+              apple <br />
+              pay
+            </h2>
+            <p>ilə təmassız ödənişlər</p>
+            <button class="slider_btn subscribe">
+              <a href="./apple_pay.html">ətraflı</a>
+            </button>
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
     </div>
-</body>
+    <div class="maincontainer">
+    @RenderBody()
+    </div>
+    <footer>
+      <div class="row" id="all_footer">
+        <div class="col-lg-10">
+          <div class="footer_nav">
+            <table>
+              <thead>
+                <tr>
+                  <th class="first_footer_nav">
+                    <a href="https://atb.az/news/">xəbərlər</a>
+                  </th>
+                  <th><a href="https://atb.az/career/">karyera mərkəzi</a></th>
+                  <th>
+                    <a href="./bank_information.html">bank məlumatları</a>
+                  </th>
+                  <th><a href="https://atb.az/tehlukesizliyiniz/">təhlükəsizliyiniz</a></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="./consumption_credit.html" class="left_nav_option"
+                      >istehlak krediti</a
+                    >
+                  </td>
+                  <td class="footer_td">
+                    <a href="./atb_card.html" class="other_nav_option"
+                      >atb cart</a
+                    >
+                  </td>
+                  <td class="footer_td">
+                    <a href="./rates.html" class="other_nav_option">tariflər</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="./atb_card_credit.html" class="left_nav_option"
+                      >atb card kredit</a
+                    >
+                  </td>
+                  <td class="footer_td">
+                    <a href="./atb_card_premium.html" class="other_nav_option"
+                      >atb cart premium</a
+                    >
+                  </td>
+                  <td class="footer_td">
+                    <a href="./classic_deposit.html" class="other_nav_option"
+                      >"klassik" əmanət</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="./atb360.html" class="left_nav_option">atb 360</a>
+                  </td>
+                  <td class="footer_td">
+                    <a href="./atb_junior.html" class="other_nav_option"
+                      >atb card junior</a
+                    >
+                  </td>
+                  <td class="footer_td">
+                    <a href="./update_card.html" class="other_nav_option"
+                      >kartın yenilənməsi</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <a href="./index.html">
+            <img id="logo_atb" src="./assets/images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="bottom_footer" id="bottom_footer_2">
+          <div class="first_bottom_footer">
+            <div class="row">
+              <div class="col-lg-3">
+                <ul class="connect_info">
+                  <li>
+                    <a
+                      href="https://go.2gis.com/yj2ce2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Bakı, C. Məmmədquluzadə küç. 85; 192/193</a
+                    >
+                  </li>
+                  <li><a href="tel:+945">tel: 945</a></li>
+                  <li>
+                    <a href="https://wa.me/994557770945"
+                      >WhatsApp: +994 55 7770 945</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:atb@atb.az"
+                      >email:
+                      <span class="link-annotation-unknown-block-id--2096330543"
+                        >atb@atb.az</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3" id="site_logo">
+                <div class="site_logo_1">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a
+                        href="https://adif.gov.az"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="ADIF "
+                      >
+                        <img src="./assets/images/adif_logo.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="https://infobank.az/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="infobank"
+                      >
+                        <img src="./assets/images/infobank_logo.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="site_logo_2">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a
+                        href="https://www.cbar.az/%20%20"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Merkezi Bank"
+                      >
+                        <img src="./assets/images/armb_logo.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="https://aih.gov.az/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Azerbaycan Investisiya Holdinq"
+                      >
+                        <img src="./assets/images/aih_logo.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="second_bottom_footer">
+            <p>© 2002 – 2023 AzərTürkBank.</p>
+            <p>Bütün hüquqlar qorunur.</p>
+            <p>
+              Azərbaycan Respublikası Mərkəzi Bankının 29 iyun 1995-ci il
+              tarixli 234 nömrəli bank əməliyyatlarının həyata keçirilməsi üzrə
+              lisenziyasına əsasən
+            </p>
+            <p>Saytın məzmununun təkrar istifadəsi qadağandır.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="subscribe" id="chatbtn" onclick="openchat()">
+      <i class="fa-regular fa-comment-dots"></i>
+    </button>
+
+    <div class="chat_main" id="chat_main">
+      <button class="subscribe" id="wpbtn">
+        <a href="https://api.whatsapp.com/send?phone=994557770945"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </button>
+      <button class="subscribe" id="msbtn">
+        <a href="https://m.me/190245327655034"
+          ><i class="fa-brands fa-facebook-messenger"></i
+        ></a>
+      </button>
+      <button class="subscribe" id="closebtn" onclick="closechat()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <script src="./assets/js/calculator.js"></script>
+    <script src="./assets/js/currency.js"></script>
+    <script src="./assets/js/chat.js"></script>
+    <script src="./assets/js/lang.js"></script>
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/exchange.js"></script>
+    <script src="./assets/js/OpenCashOpenDeposit.js"></script>
+    <script src="./assets/js/OpenCashOrder.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
+

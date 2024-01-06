@@ -1,0 +1,95 @@
+footer{
+    margin-top: 8rem;
+
+    #all_footer{
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        background: rgba(148,114,173,.08);
+
+        .footer_nav{
+            margin-left: 7rem;
+            margin-bottom: 3rem;            
+            margin-top: 4rem;
+            table{
+                thead{
+                    tr{
+                        .first_footer_nav{
+                            text-align: start;
+                        }
+                        th{
+                            text-align: center;
+                            a{
+                                text-decoration: none;
+                                color: black;
+                                font-weight: bold;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+
+
+                tbody{
+                    .footer_td{
+                        border-left: 1px solid #d0d0d0;
+                    }
+                    .other_nav_option{
+                        margin: 2rem;
+                    }
+                    .left_nav_option{
+                        margin-right: 3rem;
+                    }
+                    a{
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                }
+            }
+
+        }
+        #logo_atb{
+            margin-top: 4rem;
+        }
+        .bottom_footer{
+            border-radius: 15px 15px 0 0;
+            background: rgba(61, 0, 110, 0.08);
+            .first_bottom_footer{
+                margin-top: 3rem;
+                margin-left: 5rem;
+                .connect_info{
+                    list-style-type: none;
+                    a{
+                        text-decoration: none;
+                        font-size: 12px;
+                        color: #000000;
+                        margin: 0;
+                        line-height: 1.1875;
+                    }
+                }
+            }
+            .second_bottom_footer{
+                margin-top: 2rem;
+                margin-left: 7rem;
+                padding-bottom: 4rem;
+                p{
+                    font-size: 12px;
+                    margin: 0;
+                    line-height: 1.1875;
+                }
+    
+            }
+        }
+
+        #atbbusiness{
+            color: white;
+            border: none;
+            border-radius: 7px;
+            padding: 5px 1px;
+            background:linear-gradient(87.61deg,#6f0bbb -5.3%,#be9bd8 158.9%) ;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}

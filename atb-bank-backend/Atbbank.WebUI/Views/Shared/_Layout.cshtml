@@ -61,16 +61,16 @@
 
       <div class="grid-container-header">
         <div class="item-1" id="firstpartheader">
-          <a href="./index.html">
+          <a asp-controller="home" asp-action="index">
             <img src="./assets/images/logo.svg" alt="" />
           </a>
         </div>
 
         <div class="item-2" id="secondpartheader">
           <ul id="navigation-menu-up" class="navigation-menu-up">
-            <li><a href="./index.html">FƏRDİ</a></li>
-            <li><a href="./business.html">BİZNES</a></li>
-            <li><a href="./KOB.html">KOB</a></li>
+            <li><a asp-controller="home" asp-action="index">FƏRDİ</a></li>
+            <li><a asp-controller="home" asp-action="business">BİZNES</a></li>
+            <li><a asp-controller="home" asp-action="kob">KOB</a></li>
           </ul>
         </div>
 
@@ -292,75 +292,10 @@
         </div>
       </div>
     </header>
-
     <div class="slider">
-      <div class="slider-container">
-        <div class="mySlides fades">
-          <img src="./assets/images/slider1.png" style="width: 100%" />
-          <div class="text">
-            <h2>
-              atb junior <br />
-              kartı
-            </h2>
-            <p>övladınızın özünə aid kartı olsun</p>
-            <button class="slider_btn subscribe">
-              <a href="./atb_junior.html">sifariş</a>
-            </button>
-          </div>
-        </div>
-
-        <div class="mySlides fades">
-          <img src="./assets/images/slider2.png" style="width: 100%" />
-          <div class="text">
-            <h2>
-              atb card <br />
-              kredit
-            </h2>
-            <p>10 000 AZN-dək kredit xətti</p>
-            <button class="slider_btn subscribe">
-              <a href="./atb_card.html">sifariş</a>
-            </button>
-          </div>
-        </div>
-
-        <div class="mySlides fades">
-          <img src="./assets/images/slider3.png" style="width: 100%" />
-          <div class="text">
-            <h2 id="atbfriday">
-              atbfriday <br />
-              istehlak kreditləri <br />
-              11.5%-dən başlayaraq
-            </h2>
-            <button class="slider_btn subscribe">
-              <a href="./atb_friday.html">sifariş</a>
-            </button>
-          </div>
-        </div>
-        <div class="mySlides fades">
-          <img src="./assets/images/slider4.png" style="width: 100%" />
-          <div class="text">
-            <h2>
-              apple <br />
-              pay
-            </h2>
-            <p>ilə təmassız ödənişlər</p>
-            <button class="slider_btn subscribe">
-              <a href="./apple_pay.html">ətraflı</a>
-            </button>
-          </div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-      </div>
-      <br />
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
+        @RenderBody()
     </div>
+    
     <div class="maincontainer">
     @RenderBody()
     </div>
@@ -434,7 +369,7 @@
           </div>
         </div>
         <div class="col-lg-2">
-          <a href="./index.html">
+          <a asp-controller="home" asp-action="index">
             <img id="logo_atb" src="./assets/images/logo.svg" alt="" />
           </a>
         </div>

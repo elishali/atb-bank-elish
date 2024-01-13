@@ -1,0 +1,585 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azər Türk Bank - Sizin Dövlət Bankınız</title>
+    <meta name="description" content="“Azər Türk Bank” ASC etibarlı biznes tərəfdaşı olaraq ölkə iqtisadiyyatının real sektoruna maliyyə dəstəyi verir və müasir bank texnologiyalarını tətbiq edərək operativ xidmət göstərir" />
+    <link rel="canonical" href="https://atb.az/" />
+    <meta property="og:locale" content="az_AZ" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Azər Türk Bank - Sizin Dövlət Bankınız" />
+    <meta property="og:description" content="“Azər Türk Bank” ASC etibarlı biznes tərəfdaşı olaraq ölkə iqtisadiyyatının real sektoruna maliyyə dəstəyi verir və müasir bank texnologiyalarını tətbiq edərək operativ xidmət göstərir" />
+    <meta property="og:url" content="https://atb.az/" />
+    <meta property="og:site_name" content="Azər Türk Bank" />
+    <meta property="article:modified_time" content="2023-11-24T06:25:37+00:00" />
+    <meta property="og:image" content="https://atb.az/wp-content/plugins/atb-core/assets/success.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/images/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <button class="burger-btn" type="button" id="burger-btn" style="display: none;">
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__close"></span>
+        </button>
+
+        <div class="grid-container-header-other">
+
+            <div class="item-1" id="firstpartheader">
+                <a asp-controller="home" action="index">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="item-2" id="secondpartheader">
+                <ul id="navigation-menu-up" class="navigation-menu-up">
+                    <li><a asp-controller="home" action="index">FƏRDİ</a></li>
+                    <li><a asp-controller="home" action="business">BİZNES</a></li>
+                    <li><a asp-controller="home" action="kob">KOB</a></li>
+                </ul>
+            </div>
+
+            <div class="item-4" id="latestheader">
+                <div class="row latestnav">
+                    <div class="col-lg-1">
+                        <button class="subscribe" id="searchbtn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="./open_account.html" id="openaccount">hesab açmaq</a>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="lang" onclick="changelang()">
+                            <a href="#" id="AZE">AZE</a>
+                            <a href="#" class="d-none" id="ENG">ENG</a>
+                            <a href="#" class="d-none" id="RUS">RUS</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="nav_bank_info">
+                            <button class="nav_bank_info_btn subscribe">BANK HAQQINDA <i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="nav_bank_info-content">
+                                <a href="./bank_information.html">bank məlumatları</a>
+                                <a href="./career_center.html">karyera mərkəzi</a>
+                                <a href="./information_description.html">məlumatların açıqlaması</a>
+                                <a href="./news.html">xəbərlər</a>
+                                <a href="./consumption.html">bankla əlaqə</a>
+                                <a href="./comments_and_suggestions.html">irad və təklflər</a>
+                                <a href="./branchs.html">filiallar</a></li>
+                                <a href="./security.html">təhlükəsizliyiniz</a>
+                                <a href="./charity.html">xeyriyyəçilik</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="tel:945"><i class="fa-solid fa-phone-volume"></i> 945 </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="other_page_banner">
+        <img src="./assets/images/kob.png" style="width:100%">
+        <div class="text">
+            <h2>KOB</h2>
+            <p>kreditləri</p>
+            <button class="banner_btn subscribe"><a href="#">sifariş</a></button>
+        </div>
+    </div>
+
+    <div class="maincontainer">
+
+        <div class="info_main">
+            <h2>sərfəli şərtlərlə kiçik və orta biznes kreditləri</h2>
+            <ul>
+                <li>mikro, kiçik və orta biznesin inkişafı üçün kreditlər</li>
+                <li>kreditlər Azərbaycan Respublikası ərazisində fəaliyyət göstərən şirkətlər üçün verilir</li>
+                <li>fərdi yanaşma və sərfəli tariflər</li>
+            </ul>
+        </div>
+
+        <div class="Superiority">
+            <div class="Superiority_Top">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>uzunmüddətli partnyorluq</h4>
+                        <p>daim sadələşən kredit şərtləri sayəsində uzunmüddətli <br> partnyorluq üçün əlverişli şərait</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./assets/images/long_term_partnership.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row Superiority_Bottom">
+                <div class="col-lg-6">
+                    <div class="Superiority_One">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h4>çeviklik</h4>
+                                <p> çevik təhlil və təcili <br> qərarların alınması</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="./assets/images/flexible.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="Superiority_Two">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h4>sərfəli şərtlər</h4>
+                                <p>güzəşt müddəti, biznesə uyğun ödəniş şərtləri və sərfəli faiz dərəcələri</p>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <img src="./assets/images/favorable_conditions.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Rates">
+            <h2>tariflər</h2>
+            <div class="row">
+                <div class="col-lg-6 ">
+                    <table>
+                        <tbody>
+                            <tr class="tabel_tittle">
+                                <td class="has-text-align-center" data-align="center">
+                                    <strong>müddət</strong>
+                                </td>
+                                <td class="has-text-align-center" data-align="center">
+                                    <strong>illik faiz dərəcələri </strong>
+                                    <br>
+                                    <em>(minimum xidmət haqqı</em>)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center">6 ayadək</td>
+                                <td class="has-text-align-center" data-align="center">
+                                    <strong>12%-dən</strong>&nbsp;(0%)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center">12 ayadək</td>
+                                <td class="has-text-align-center" data-align="center">
+                                    <strong>
+                                        <strong>13%-dən</strong>
+                                    </strong> &nbsp;(0%)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center">18 ayadək</td>
+                                <td class="has-text-align-center" data-align="center">
+                                    <strong>14%-dən</strong>&nbsp;(0%)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center">24 ayadək</td>
+                                <td class="has-text-align-center" data-align="center">
+                                    <strong>15%-dən</strong>&nbsp;(0%)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-6">
+                    <table>
+                        <tbody>
+                            <tr class="tabel_tittle">
+                                <td class="has-text-align-center" data-align="center">
+                                    <strong>müddət</strong>
+                                </td>
+                                <td class="has-text-align-center" data-align="center">
+                                    <strong>illik faiz dərəcələri </strong>
+                                    <br>
+                                    <em> (minimum xidmət haqqı</em>)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center">30 ayadək</td>
+                                <td class="has-text-align-center" data-align="center">
+                                    <strong>15.5%-dən</strong>&nbsp;(0%)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center">36 ayadək</td>
+                                <td class="has-text-align-center" data-align="center">
+                                    <strong>16.5%-dən</strong>&nbsp;(0%)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center">42 ayadək</td>
+                                <td class="has-text-align-center" data-align="center">
+                                    <strong>17%-dən</strong>&nbsp;(0%)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center">48 ayadək</td>
+                                <td class="has-text-align-center" data-align="center">
+                                    <strong>17%-dən</strong>&nbsp;(0%)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="Online_Request">
+            <h2>onlayn müraciət</h2>
+            <p>əlaqə məlumatlarınızı daxil edin, qısa zamanda sizinlə əlaqə saxlayacağıq</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" placeholder="ad, soyad">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="vöen">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="tel" placeholder="telefon">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="email">
+                </div>
+            </div>
+
+            <div class="open_account_last">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <label class="cus-checkbox__label">
+                            <input type="checkbox" class="cus-checkbox__input" checked="">
+                            <span class="cus-checkbox__check"></span>
+                        </label>
+                    </div>
+                    <div class="col-lg-11">
+                        <p>hüquqi şəxs və ya fərdi sahibkar olduğumu təsdiq edirəm</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <label class="cus-checkbox__label">
+                                <input type="checkbox" class="cus-checkbox__input" checked="">
+                                <span class="cus-checkbox__check"></span>
+                            </label>
+                        </div>
+                        <div class="col-lg-11">
+                            <p>məlumatlarımın Asan Finansdan əldə edilməsi və AKB reyestrində sorğu edilməsinə razıyam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button id="button">göndər</button>
+            </div>
+            <p>*bütün bəndlərin doldurulması mütləqdir</p>
+
+        </div>
+
+        <div class="Open_Account">
+            <h2><b>onlayn<br>hesab açın</b></h2>
+            <div class="row">
+                <div class="col-lg-6 text">
+
+                    <p>
+                        bankın biznes məhsullarından istifadə etmək üçün
+                        <span style="text-decoration: underline">
+                            <strong><a href="https://atb.az/hesab/" target="_blank" rel="noopener">onlayn hesab açın</a></strong>
+                        </span>
+                    </p>
+
+                    <p>
+                        <a href="https://atb.az/atb-business/">
+                            <span style="text-decoration: underline"><strong>“ATB Business” internet bankçılıqda</strong></span>
+                        </a> güzəştli tariflər və bonuslardan yararlanın
+                    </p>
+
+                    <p>
+                        biznes məhsullar və xidmətlər üzrə
+                        <span style="text-decoration: underline">
+                            <strong>
+                                <a href="https://wa.me/994553000945">+994553000945</a>
+                            </strong>
+                        </span> WhatsApp nömrəsinə müraciət edin&nbsp;
+                    </p>
+
+                    <button class="subscribe" id="button"><a href="./open_account.html">hesab açın</a></button>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="./assets/images/open_account.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="Useful_Info">
+            <h4>faydalı məlumat</h4>
+            <div class="conditions">
+                <div class="row">
+                    <div class="col-lg-11" id="contittle">
+                        şərtlər
+                    </div>
+                    <div class="col-lg-1">
+                        <button class="subscribe" onclick="OpenConditionMenu()" id="OpenConditionMenu"><i class="fa-solid fa-plus" id="openiconcon"></i></button>
+                    </div>
+                </div>
+                <div class="condition_menu" id="condition_menu">
+                    <div class="12month">
+                        <h2>12 ayadək güzəşt müddəti</h2>
+                        <ul>
+                            <li>valyuta - AZN</li>
+                            <li>müddət - 1 aydan 48 ayadək</li>
+                            <li>ödəniş forması - annuitet, azalan, sərbəst və ya fərdi qraf</li>
+                        </ul>
+                    </div>
+                    <div class="credit">
+                        <h2>300 000 AZN-dək kredit</h2>
+                        <ul>
+                            <li>məbləğ - min. 5 000 AZN maks. 300 000 AZN-dək</li>
+                            <li>zaminlə - 50 000 AZN-dək</li>
+                            <li>təyinat - əsas və ya dövriyyə vəsaitlərinin alınması / artırılması</li>
+                        </ul>
+                    </div>
+
+                    <div class="link">
+                        <i class="fa-solid fa-file-pdf"></i>
+                        <a href="https://atb.az/wp-content/uploads/2023/08/atb_kob-tarifler-march2023.pdf" target="_blank" rel="noopener">şərtlər haqqında ətraflı məlumat</a>
+                    </div>
+
+
+                    <h2></h2>
+
+                </div>
+            </div>
+            <div class="KOB_credit">
+                <div class="row">
+                    <div class="col-lg-11" id="kobtittle">
+                        KOB kreditini hansı filialdan əldə edə bilərəm?
+                    </div>
+                    <div class="col-lg-1">
+                        <button class="subscribe" id="openkobcreditbtn" onclick="OpenKobCredit()"><i class="fa-solid fa-plus" id="openicon"></i></button>
+                    </div>
+                </div>
+                <div class="KOB_menu" id="KOB_menu">
+                    <p>aşağdaki filiallarından əldə edə bilərsiniz</p>
+                    <a href="https://goo.gl/maps/nXcWTNKSP8m14Xn57" target="_blank" rel="noopener">Rəqəmsal 6</a>
+                    <a href="https://goo.gl/maps/oBRsosMjeak1qWU97" target="_blank" rel="noopener">Şirvan</a>
+                    <a href="https://goo.gl/maps/zCJmWmZwUGtHLKNB9" target="_blank" rel="noopener">Gəncə</a>
+                    <a href="https://goo.gl/maps/4Jj8jkDbDK1L7tJA9" target="_blank" rel="noopener">Naxçıvan</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="row" id="all_footer">
+            <div class="col-lg-10">
+                <div class="footer_nav">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="first_footer_nav">
+                                    <a href="https://atb.az/news/">xəbərlər</a>
+                                </th>
+                                <th><a href="https://atb.az/career/">karyera mərkəzi</a></th>
+                                <th>
+                                    <a href="./bank_information.html">bank məlumatları</a>
+                                </th>
+                                <th><a href="https://atb.az/tehlukesizliyiniz/">təhlükəsizliyiniz</a></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="./consumption_credit.html" class="left_nav_option">istehlak krediti</a>
+                                </td>
+                                <td class="footer_td">
+                                    <a href="./atb_card.html" class="other_nav_option">atb cart</a>
+                                </td>
+                                <td class="footer_td">
+                                    <a href="./rates.html" class="other_nav_option">tariflər</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="./atb_card_credit.html" class="left_nav_option">atb card kredit</a>
+                                </td>
+                                <td class="footer_td">
+                                    <a href="./atb_card_premium.html" class="other_nav_option">atb cart premium</a>
+                                </td>
+                                <td class="footer_td">
+                                    <a href="./classic_deposit.html" class="other_nav_option">"klassik" əmanət</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="./atb360.html" class="left_nav_option">atb 360</a>
+                                </td>
+                                <td class="footer_td">
+                                    <a href="./atb_junior.html" class="other_nav_option">atb card junior</a>
+                                </td>
+                                <td class="footer_td">
+                                    <a href="./update_card.html" class="other_nav_option">kartın yenilənməsi</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <a asp-controller="home" action="index">
+                    <img id="logo_atb" src="./assets/images/logo.svg" alt="" />
+                </a>
+            </div>
+            <div class="bottom_footer" id="bottom_footer_2">
+                <div class="first_bottom_footer">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <ul class="connect_info">
+                                <li>
+                                    <a href="https://go.2gis.com/yj2ce2"
+                                       target="_blank"
+                                       rel="noopener noreferrer">Bakı, C. Məmmədquluzadə küç. 85; 192/193</a>
+                                </li>
+                                <li><a href="tel:+945">tel: 945</a></li>
+                                <li>
+                                    <a href="https://wa.me/994557770945">WhatsApp: +994 55 7770 945</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:atb@atb.az">
+                                        email:
+                                        <span class="link-annotation-unknown-block-id--2096330543">atb@atb.az</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3" id="site_logo">
+                            <div class="site_logo_1">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <a href="https://adif.gov.az"
+                                           target="_blank"
+                                           rel="noopener noreferrer"
+                                           title="ADIF ">
+                                            <img src="./assets/images/adif_logo.png" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <a href="https://infobank.az/"
+                                           target="_blank"
+                                           rel="noopener noreferrer"
+                                           title="infobank">
+                                            <img src="./assets/images/infobank_logo.png" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site_logo_2">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <a href="https://www.cbar.az/%20%20"
+                                           target="_blank"
+                                           rel="noopener noreferrer"
+                                           title="Merkezi Bank">
+                                            <img src="./assets/images/armb_logo.png" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <a href="https://aih.gov.az/"
+                                           target="_blank"
+                                           rel="noopener noreferrer"
+                                           title="Azerbaycan Investisiya Holdinq">
+                                            <img src="./assets/images/aih_logo.png" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second_bottom_footer">
+                    <p>© 2002 – 2023 AzərTürkBank.</p>
+                    <p>Bütün hüquqlar qorunur.</p>
+                    <p>
+                        Azərbaycan Respublikası Mərkəzi Bankının 29 iyun 1995-ci il
+                        tarixli 234 nömrəli bank əməliyyatlarının həyata keçirilməsi üzrə
+                        lisenziyasına əsasən
+                    </p>
+                    <p>Saytın məzmununun təkrar istifadəsi qadağandır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="subscribe" id="chatbtn" onclick="openchat()">
+        <i class="fa-regular fa-comment-dots"></i>
+    </button>
+
+    <div class="chat_main" id="chat_main">
+        <button class="subscribe" id="wpbtn">
+            <a href="https://api.whatsapp.com/send?phone=994557770945"><i class="fa-brands fa-whatsapp"></i></a>
+        </button>
+        <button class="subscribe" id="msbtn">
+            <a href="https://m.me/190245327655034"><i class="fa-brands fa-facebook-messenger"></i></a>
+        </button>
+        <button class="subscribe" id="closebtn" onclick="closechat()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./assets/js/calculator.js"></script>
+    <script src="./assets/js/currency.js"></script>
+    <script src="./assets/js/chat.js"></script>
+    <script src="./assets/js/lang.js"></script>
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/exchange.js"></script>
+    <script src="./assets/js/OpenCashOpenDeposit.js"></script>
+    <script src="./assets/js/OpenCashOrder.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/open_condition_kob_info.js"></script>
+</body>
+</html>
+

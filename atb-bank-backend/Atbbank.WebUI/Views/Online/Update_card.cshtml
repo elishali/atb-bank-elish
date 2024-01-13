@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewData["Title"] = "Update_card";
+}
+
+<div class="other_page_banner">
+    <img src="~/assets/images/atb_card_renew-1.png"
+         style="width: 100%" />
+    <div class="text">
+        <h2>kartın</h2>
+        <p>yenilənməsi</p>
+    </div>
+</div>
+
+<div class="maincontainer">
+
+    <div class="İnfo">
+        <h4>ödəniş kartının yenilənməsi</h4>
+        <h5>müddəti bitdiyi üçün kartını yeniləmək istəyən müştərilərə 5 il müddətinə <b>ödənişsiz</b>  olaraq “atb card” təqdim edilir</h5>
+    </div>
+
+    <div class="Online_Order">
+
+        <input type="number" placeholder="cari kartın nömrəsi">
+
+        <select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required select2-hidden-accessible" aria-required="true" aria-invalid="false" name="filial" data-select2-id="select2-data-1-0nsd" tabindex="-1" aria-hidden="true">
+            <option value="" data-select2-id="select2-data-3-4yzf">sifarişin növü</option>
+            <option value="Müştəri xidmətləri mərkəzi" data-select2-id="select2-data-22-suop">cari</option>
+            <option value="Rəqəmsal filialı" data-select2-id="select2-data-23-amvy">təcili (+10 AZN)</option>
+        </select>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <input type="text" placeholder="ad">
+            </div>
+            <div class="col-lg-6">
+                <input type="text" placeholder="soyad">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-6">
+                <select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required select2-hidden-accessible" aria-required="true" aria-invalid="false" name="filial" data-select2-id="select2-data-1-0nsd" tabindex="-1" aria-hidden="true">
+                    <option value="" data-select2-id="select2-data-3-4yzf">filial</option>
+                    <option value="Müştəri xidmətləri mərkəzi" data-select2-id="select2-data-22-suop">Müştəri xidmətləri mərkəzi</option>
+                    <option value="Rəqəmsal filialı" data-select2-id="select2-data-23-amvy">Rəqəmsal filialı</option>
+                    <option value="Rəqəmsal 2 filialı" data-select2-id="select2-data-24-dq23">Rəqəmsal 2 filialı</option>
+                    <option value="Rəqəmsal 3 filialı" data-select2-id="select2-data-25-9hb1">Rəqəmsal 3 filialı</option>
+                    <option value="Rəqəmsal 4 filialı" data-select2-id="select2-data-26-ydvn">Rəqəmsal 4 filialı</option>
+                    <option value="Rəqəmsal 5 filialı" data-select2-id="select2-data-27-ufrn">Rəqəmsal 5 filialı</option>
+                    <option value="Rəqəmsal 6 filialı" data-select2-id="select2-data-28-49f7">Rəqəmsal 6 filialı</option>
+                    <option value="Rəqəmsal 7 filialı" data-select2-id="select2-data-29-y0w8">Rəqəmsal 7 filialı</option>
+                    <option value="Rəqəmsal 8 filialı" data-select2-id="select2-data-30-5th1">Rəqəmsal 8 filialı</option>
+                    <option value="Gəncə filialı" data-select2-id="select2-data-31-kvoy">Gəncə filialı</option>
+                    <option value="Şirvan filialı" data-select2-id="select2-data-32-adrw">Şirvan filialı</option>
+                    <option value="Naxçıvan filialı" data-select2-id="select2-data-33-9k0b">Naxçıvan filialı</option>
+                </select>
+            </div>
+            <div class="col-lg-6 maplink">
+
+                <a class="map-link" id="maplink" target="_blank" rel="noopener noreferrer" href="https://atb.az/filial/">
+                    <span>xəritəyə bax</span>
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-6">
+                <input type="tel" placeholder="telefon">
+            </div>
+            <div class="col-lg-6">
+                <input type="email" placeholder="email">
+            </div>
+        </div>
+
+        <div class="button">
+            <button id="button">göndər</button>
+        </div>
+
+        <p>*bütün bəndlərin doldurulması mütləqdir</p>
+
+    </div>
+
+</div>
+

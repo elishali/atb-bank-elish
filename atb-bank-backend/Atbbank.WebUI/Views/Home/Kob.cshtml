@@ -22,10 +22,10 @@
     <meta property="article:modified_time" content="2023-11-24T06:25:37+00:00" />
     <meta property="og:image" content="https://atb.az/wp-content/plugins/atb-core/assets/success.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="assets/images/logo.svg">
+    <link rel="icon" href="~/assets/images/logo.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="~/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="~/assets/css/style.css">
 
 </head>
 
@@ -43,16 +43,16 @@
         <div class="grid-container-header-other">
 
             <div class="item-1" id="firstpartheader">
-                <a asp-controller="home" action="index">
-                    <img src="./assets/images/logo.svg" alt="">
+                <a asp-controller="home" asp-action="index">
+                    <img src="~/assets/images/logo.svg" alt="">
                 </a>
             </div>
 
             <div class="item-2" id="secondpartheader">
                 <ul id="navigation-menu-up" class="navigation-menu-up">
-                    <li><a asp-controller="home" action="index">FƏRDİ</a></li>
-                    <li><a asp-controller="home" action="business">BİZNES</a></li>
-                    <li><a asp-controller="home" action="kob">KOB</a></li>
+                    <li><a asp-controller="home" asp-action="index">FƏRDİ</a></li>
+                    <li><a asp-controller="home" asp-action="business">BİZNES</a></li>
+                    <li><a asp-controller="home" asp-action="kob">KOB</a></li>
                 </ul>
             </div>
 
@@ -64,7 +64,7 @@
                         </button>
                     </div>
                     <div class="col-lg-3">
-                        <a href="./open_account.html" id="openaccount">hesab açmaq</a>
+                        <a href="~/open_account.html" id="openaccount">hesab açmaq</a>
                     </div>
                     <div class="col-lg-1">
                         <div class="lang" onclick="changelang()">
@@ -77,15 +77,15 @@
                         <div class="nav_bank_info">
                             <button class="nav_bank_info_btn subscribe">BANK HAQQINDA <i class="fa-solid fa-chevron-down"></i></button>
                             <div class="nav_bank_info-content">
-                                <a href="./bank_information.html">bank məlumatları</a>
-                                <a href="./career_center.html">karyera mərkəzi</a>
-                                <a href="./information_description.html">məlumatların açıqlaması</a>
-                                <a href="./news.html">xəbərlər</a>
-                                <a href="./consumption.html">bankla əlaqə</a>
-                                <a href="./comments_and_suggestions.html">irad və təklflər</a>
-                                <a href="./branchs.html">filiallar</a></li>
-                                <a href="./security.html">təhlükəsizliyiniz</a>
-                                <a href="./charity.html">xeyriyyəçilik</a>
+                                <a href="~/bank_information.html">bank məlumatları</a>
+                                <a href="~/career_center.html">karyera mərkəzi</a>
+                                <a href="~/information_description.html">məlumatların açıqlaması</a>
+                                <a href="~/news.html">xəbərlər</a>
+                                <a href="~/consumption.html">bankla əlaqə</a>
+                                <a href="~/comments_and_suggestions.html">irad və təklflər</a>
+                                <a href="~/branchs.html">filiallar</a></li>
+                                <a href="~/security.html">təhlükəsizliyiniz</a>
+                                <a href="~/charity.html">xeyriyyəçilik</a>
                             </div>
                         </div>
 
@@ -102,7 +102,7 @@
     </header>
 
     <div class="other_page_banner">
-        <img src="./assets/images/kob.png" style="width:100%">
+        <img src="~/assets/images/kob.png" style="width:100%">
         <div class="text">
             <h2>KOB</h2>
             <p>kreditləri</p>
@@ -129,7 +129,7 @@
                         <p>daim sadələşən kredit şərtləri sayəsində uzunmüddətli <br> partnyorluq üçün əlverişli şərait</p>
                     </div>
                     <div class="col-lg-6">
-                        <img src="./assets/images/long_term_partnership.png" alt="">
+                        <img src="~/assets/images/long_term_partnership.png" alt="">
                     </div>
                 </div>
             </div>
@@ -143,7 +143,7 @@
                                 <p> çevik təhlil və təcili <br> qərarların alınması</p>
                             </div>
                             <div class="col-lg-6">
-                                <img src="./assets/images/flexible.png" alt="">
+                                <img src="~/assets/images/flexible.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                             </div>
 
                             <div class="col-lg-6">
-                                <img src="./assets/images/favorable_conditions.png" alt="">
+                                <img src="~/assets/images/favorable_conditions.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -332,11 +332,11 @@
                         </span> WhatsApp nömrəsinə müraciət edin&nbsp;
                     </p>
 
-                    <button class="subscribe" id="button"><a href="./open_account.html">hesab açın</a></button>
+                    <button class="subscribe" id="button"><a href="~/open_account.html">hesab açın</a></button>
                 </div>
 
                 <div class="col-lg-6">
-                    <img src="./assets/images/open_account.png" />
+                    <img src="~/assets/images/open_account.png" />
                 </div>
             </div>
         </div>
@@ -414,7 +414,7 @@
                                 </th>
                                 <th><a href="https://atb.az/career/">karyera mərkəzi</a></th>
                                 <th>
-                                    <a href="./bank_information.html">bank məlumatları</a>
+                                    <a href="~/bank_information.html">bank məlumatları</a>
                                 </th>
                                 <th><a href="https://atb.az/tehlukesizliyiniz/">təhlükəsizliyiniz</a></th>
                             </tr>
@@ -422,35 +422,35 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="./consumption_credit.html" class="left_nav_option">istehlak krediti</a>
+                                    <a href="~/consumption_credit.html" class="left_nav_option">istehlak krediti</a>
                                 </td>
                                 <td class="footer_td">
-                                    <a href="./atb_card.html" class="other_nav_option">atb cart</a>
+                                    <a href="~/atb_card.html" class="other_nav_option">atb cart</a>
                                 </td>
                                 <td class="footer_td">
-                                    <a href="./rates.html" class="other_nav_option">tariflər</a>
+                                    <a href="~/rates.html" class="other_nav_option">tariflər</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="./atb_card_credit.html" class="left_nav_option">atb card kredit</a>
+                                    <a href="~/atb_card_credit.html" class="left_nav_option">atb card kredit</a>
                                 </td>
                                 <td class="footer_td">
-                                    <a href="./atb_card_premium.html" class="other_nav_option">atb cart premium</a>
+                                    <a href="~/atb_card_premium.html" class="other_nav_option">atb cart premium</a>
                                 </td>
                                 <td class="footer_td">
-                                    <a href="./classic_deposit.html" class="other_nav_option">"klassik" əmanət</a>
+                                    <a href="~/classic_deposit.html" class="other_nav_option">"klassik" əmanət</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="./atb360.html" class="left_nav_option">atb 360</a>
+                                    <a href="~/atb360.html" class="left_nav_option">atb 360</a>
                                 </td>
                                 <td class="footer_td">
-                                    <a href="./atb_junior.html" class="other_nav_option">atb card junior</a>
+                                    <a href="~/atb_junior.html" class="other_nav_option">atb card junior</a>
                                 </td>
                                 <td class="footer_td">
-                                    <a href="./update_card.html" class="other_nav_option">kartın yenilənməsi</a>
+                                    <a href="~/update_card.html" class="other_nav_option">kartın yenilənməsi</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -458,7 +458,7 @@
                 </div>
             </div>
             <div class="col-lg-2">
-                <a asp-controller="home" action="index">
+                <a asp-controller="home" asp-action="index">
                     <img id="logo_atb" src="./assets/images/logo.svg" alt="" />
                 </a>
             </div>
@@ -492,7 +492,7 @@
                                            target="_blank"
                                            rel="noopener noreferrer"
                                            title="ADIF ">
-                                            <img src="./assets/images/adif_logo.png" alt="" />
+                                            <img src="~/assets/images/adif_logo.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="col-lg-6">
@@ -500,7 +500,7 @@
                                            target="_blank"
                                            rel="noopener noreferrer"
                                            title="infobank">
-                                            <img src="./assets/images/infobank_logo.png" alt="" />
+                                            <img src="~/assets/images/infobank_logo.png" alt="" />
                                         </a>
                                     </div>
                                 </div>
@@ -512,7 +512,7 @@
                                            target="_blank"
                                            rel="noopener noreferrer"
                                            title="Merkezi Bank">
-                                            <img src="./assets/images/armb_logo.png" alt="" />
+                                            <img src="~/assets/images/armb_logo.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="col-lg-6">
@@ -520,7 +520,7 @@
                                            target="_blank"
                                            rel="noopener noreferrer"
                                            title="Azerbaycan Investisiya Holdinq">
-                                            <img src="./assets/images/aih_logo.png" alt="" />
+                                            <img src="~/assets/images/aih_logo.png" alt="" />
                                         </a>
                                     </div>
                                 </div>

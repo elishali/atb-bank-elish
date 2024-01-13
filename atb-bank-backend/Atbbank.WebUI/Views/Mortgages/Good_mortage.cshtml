@@ -1,0 +1,154 @@
+﻿
+@{
+    ViewData["Title"] = "Good_mortage";
+}
+
+<div class="other_page_banner">
+    <img src="~/assets/images/atb_productpage_lgotnaya_ipoteka.png" style="width: 100%" />
+    <div class="text">
+        <h2> güzəştli ipoteka</h2>
+        <p>krediti</p>
+        <button class="banner_btn subscribe"><a href="#">müraciət</a></button>
+        <button class="banner_btn subscribe"><a href="~/branchs.html">fililal tapmaq</a></button>
+    </div>
+</div>
+
+<div class="maincontainer">
+
+    <div class="Cards_Two">
+        <div class="row">
+            <div class="col-lg-3 card_info">
+                <h5>kredit məbləğ</h5>
+                <p>100 000 AZN</p>
+            </div>
+            <div class="col-lg-3 card_info">
+                <h5>müddət</h5>
+                <p>30 illik</p>
+            </div>
+            <div class="col-lg-3 card_info">
+                <h5>illik faiz dərəcəsi</h5>
+                <p>illik 4%</p>
+            </div>
+            <div class="col-lg-3 card_info">
+                <h5>ilkin ödəniş</h5>
+                <p>30%</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info">
+        <p>güzəştli ipoteka kreditləri Azərbaycan Respublikasının İpoteka və Kredit Zəmanət Fondunun hesabına verilir</p>
+    </div>
+
+    <div class="Online_Order">
+        <h4>sualınız var? biz cavablandırarıq</h4>
+        <input type="text" placeholder="ad, soy ad">
+        <input type="tel" placeholder="telefon">
+
+        <div class="button">
+            <button id="button">göndər</button>
+        </div>
+
+        <p>*bütün bəndlərin doldurulması mütləqdir</p>
+        <p>"göndər" düyməsini basaraq <a href="~/security.html">müraciət qaydaları</a> ilə razılaşmış olursunuz</p>
+
+    </div>
+
+    <div class="Useful_Info">
+        <h4>faydalı məlumat</h4>
+        <div class="interest_rates">
+            <div class="row">
+                <div class="col-lg-11" id="interest_rates_tittle">
+                    faiz dərəcələri
+                </div>
+                <div class="col-lg-1">
+                    <button class="subscribe"
+                            onclick="Open_interest_rates_menu()"
+                            id="Open_interest_rates_menu">
+                        <i class="fa-solid fa-plus" id="openiconcon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="interest_rates_menu" id="interest_rates_menu">
+                <table>
+                    <tr>
+                        <th>müddət</th>
+                        <th>faiz dərəcəsi</th>
+                        <th>xidmət haqqı</th>
+                    </tr>
+                    <tr>
+                        <td>12 ayadək</td>
+                        <td>11.5%</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>24 ayadək</td>
+                        <td>13.5%</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>36 ayadək</td>
+                        <td>14%</td>
+                        <td>0.5% (min. 50 AZN)</td>
+                    </tr>
+                    <tr>
+                        <td>48 ayadək</td>
+                        <td>15%</td>
+                        <td>1% (min. 50 AZN)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="conditions">
+            <div class="row">
+                <div class="col-lg-11" id="contittle">şərtlər</div>
+                <div class="col-lg-1">
+                    <button class="subscribe"
+                            onclick="OpenConditionMenu()"
+                            id="OpenConditionMenu">
+                        <i class="fa-solid fa-plus" id="openiconcon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="condition_menu" id="condition_menu">
+                <ul>
+                    <li>məbləğ: <b>300 – 30 000 AZN</b></li>
+                    <li>30 000 AZN-dək <b>zaminsiz</b></li>
+                    <li>valyuta: <b>AZN</b></li>
+                    <li>müddət: <b>3 – 48 ay</b></li>
+                    <li>ödəniş şərti: <b>annuitet</b></li>
+                    <li>sığorta: <b>tələb olunmur</b></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="requirements">
+            <div class="row">
+                <div class="col-lg-11" id="requirementstittle">tələblər</div>
+                <div class="col-lg-1">
+                    <button class="subscribe"
+                            onclick="OpenrequirementsMenu()"
+                            id="OpenrequirementsMenu">
+                        <i class="fa-solid fa-plus" id="openiconcon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="requirements_menu" id="requirements_menu">
+                <ul>
+                    <li>yaş həddi: <b>18-70</b></li>
+                    <li>
+                        iş yeri<b> rəsmi iş yeri olan istənilən şəxs / təqaüdçü</b>
+                    </li>
+                    <li>
+                        iş stajı:
+                        <b>6 ay, sonuncu iş yerində fasiləsiz keçidlə minimum 3 ay</b>
+                    </li>
+                    <li>əməkhaqqı: <b>minimum tələb yoxdur</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,199 @@
+﻿
+@{
+    ViewData["Title"] = "Credit_and_card_payment";
+}
+
+<div class="other_page_banner">
+    <img src="~/assets/images/credit_and_card_payment.png" style="width:100%">
+    <div class="text">
+        <h2>kredit və kart <br> ödənişləri </h2>
+    </div>
+</div>
+
+<div class="maincontainer">
+
+    <div class="Info_Main">
+        <h4>kredit ödənişlərini bu üsullarla həyata keçirə bilərsiniz</h4>
+    </div>
+
+    <div class="Superiority">
+        <div class=" Superiority_Top" style="background-image: url(../assets/images/consumption_credit.jpg);">
+            <div class="row">
+                <div class="col-lg-10 easy_text">
+                    <h2>atb360 mobil tətbiqində</h2>
+                    <p>atb360 mobil tətbiqdə “ödənişlər” bölməsində <br> “atb krediti” seçməklə atb <br> kartınızla ödəniş edə bilərsiniz</p>
+                </div>
+                <div class="col-lg-2 easy_app">
+                    <p>tətbiqi <br> yükləyin</p>
+                    <a href="~/consumption_credit.html" target="_blank"><img src="~/assets/images/qr.svg" alt=""></a>
+                    <br>
+                    <a href="~/consumption_credit.html" target="_blank"><img src="~/assets/images/app.svg" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Superiority_Bottom">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="Superiority_One">
+                        <div class="row">
+                            <div class=" col-lg-6">
+                                <h4>ödəniş terminallarında</h4>
+                                <p> MilliÖN və ya E-manat ödəmə terminallarında*</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="~/assets/images/terminal.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="Superiority_Two">
+                        <div class="row">
+                            <div class=" col-lg-6">
+                                <h4>bankın filiallarında</h4>
+                                <p> müştəri kodu ilə Azər Türk Bank-ın istənilən <a href="~/branchs.html">filialına</a>  yaxınlaşmaqla</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="~/assets/images/location.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>*ödəmə sistemləri tərəfindən xidmət haqqı: 1%</p>
+        </div>
+
+
+    </div>
+
+    <div class="Online">
+        <h4>onlayn</h4>
+        <div class="row">
+            <div class="col-lg-4">
+                <button class="onlinebtn_one subscribe" id="credit_btn" onclick="opencredit()">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <i class="fa-solid fa-percent"></i>
+                        </div>
+                        <div class="col-lg-10">
+                            <p>kredit ödənişi</p>
+                        </div>
+                    </div>
+                </button>
+                <button class="onlinebtn_one subscribe" id="cashincard_btn" onclick="opencash()">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <div class="col-lg-10">
+                            <p>karta mədaxil</p>
+                        </div>
+                    </div>
+                </button>
+                <button class="onlinebtn_one subscribe" id="depositbox_btn" onclick="opendepositbox()">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+                        </div>
+                        <div class="col-lg-10">
+                            <p>depozit qutusu</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="col-lg-8">
+                <div class="credit_payment_main" id="credit_payment_main">
+                    <div class="top">
+                        <div class="row section">
+                            <div class="col-lg-3">
+                                <p><b>1. müştəri kodu</b> </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p>2. kredit məlumatı</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p>3. ödəniş</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p>4. ödənişin nəticəsi</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="main">
+                            <div class="input">
+                                <div class="div">
+                                    <input type="text" name="" id="" placeholder="müştəri kodu/cif">
+                                </div>
+                                <div class="div">
+                                    <input type="date" name="" id="" placeholder="doğum tarixi">
+                                </div>
+                            </div>
+                            <button class=" btncredit subscribe" id="btncredit"><p>irəli</p></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cashincard_main" id="cashincard_main">
+                    <div class="top">
+                        <div class="row section">
+                            <div class="col-lg-4">
+                                <p><b>1. kart məlumatı</b> </p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p>2. ödəniş</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p>3. ödənişin nəticəsi</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="main">
+                            <div class="input">
+                                <div class="div">
+                                    <input type="number" name="" id="" placeholder="kart nömrəsi">
+                                </div>
+                            </div>
+                            <button class=" btncredit subscribe" id="btncredit"><p>irəli</p></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="depositbox_main" id="depositbox_main">
+                    <div class="top">
+                        <div class="row section">
+                            <div class="col-lg-3">
+                                <p><b>1. müştəri kodu</b> </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p>2. kredit məlumatı</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p>3. ödəniş</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <p>4. ödənişin nəticəsi</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="main">
+                            <div class="input">
+                                <div class="div">
+                                    <input type="text" name="" id="" placeholder="müştəri kodu/cif">
+                                </div>
+                                <div class="div">
+                                    <input type="date" name="" id="" placeholder="doğum tarixi">
+                                </div>
+                            </div>
+                            <button class=" btncredit subscribe" id="btncredit"><p>irəli</p></button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+

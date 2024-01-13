@@ -1816,63 +1816,103 @@ button.subscribe {
   margin-left: 1rem;
 }
 
-.Superiority {
+.Superiority_two {
   padding: 2rem;
 }
-.Superiority .Superiority_Top {
+.Superiority_two .Superiority_Top {
   padding: 2rem;
 }
-.Superiority .Superiority_Top .tittle {
+.Superiority_two .Superiority_Top .tittle {
   text-align: center;
   margin-bottom: 2rem;
 }
-.Superiority .Superiority_Top .tittle p {
+.Superiority_two .Superiority_Top .tittle p {
   color: #6F0BBB;
   font-size: 20px;
   font-weight: bold;
 }
-.Superiority .Superiority_Top .tittle_to {
+.Superiority_two .Superiority_Top .tittle_to {
   margin-bottom: 2rem;
 }
-.Superiority .Superiority_Top .tittle_to h4 {
+.Superiority_two .Superiority_Top .tittle_to h4 {
   color: #6F0BBB;
   font-size: 20px;
   margin-left: 2rem;
 }
-.Superiority .Superiority_Top .tittle_to p {
+.Superiority_two .Superiority_Top .tittle_to p {
   color: #6F0BBB;
   font-size: 20px;
   font-weight: bold;
   display: inline;
   padding: 1rem 8rem;
 }
-.Superiority .Superiority_Top .tittle_table {
+.Superiority_two .Superiority_Top .tittle_table {
   margin-bottom: 2rem;
 }
-.Superiority .Superiority_Top .tittle_table p {
+.Superiority_two .Superiority_Top .tittle_table p {
   color: #6F0BBB;
   font-size: 20px;
   font-weight: bold;
   display: inline;
   padding: 1rem;
 }
-.Superiority .Superiority_Top .tables {
+.Superiority_two .Superiority_Top .tables {
   border-bottom: 1px dashed gray;
   border-top: 1px dashed gray;
 }
-.Superiority .Superiority_Top .tables h4 {
+.Superiority_two .Superiority_Top .tables h4 {
   margin-left: 2rem;
   font-weight: normal;
 }
-.Superiority .Superiority_Top .tables p {
+.Superiority_two .Superiority_Top .tables p {
   margin-left: 15rem;
 }
-.Superiority .Superiority_Top table tr td {
+.Superiority_two .Superiority_Top table tr td {
   font-size: 20px;
   border-bottom: 1px dashed gray;
   border-top: 1px dashed gray;
   padding-left: 2rem;
   padding-right: 12rem;
+}
+.Superiority_two .Superiority_Bottom {
+  margin-top: 2rem;
+}
+.Superiority_two .Superiority_Bottom .Superiority_One {
+  border-radius: 15px;
+  background-color: rgba(244, 208, 0, 0.1019607843);
+  min-height: 20px;
+  padding: 35px 34px 40px;
+}
+.Superiority_two .Superiority_Bottom .Superiority_Two {
+  border-radius: 16px;
+  background-color: rgba(75, 153, 210, 0.09);
+  min-height: 20px;
+  padding: 35px 34px 40px;
+}
+.Superiority_two .Superiority_Bottom .Superiority_Two i {
+  font-size: 3rem;
+  color: brown;
+  margin-bottom: 1rem;
+}
+.Superiority_two .Superiority_Bottom .Superiority_Two #doc {
+  color: #3b5998;
+}
+.Superiority_two .Superiority_Bottom .Superiority_Two a {
+  text-decoration: none;
+}
+.Superiority_two .Superiority_Bottom .Superiority_Two ul {
+  margin-top: 1rem;
+  font-size: 18px;
+}
+.Superiority_two .Superiority_Bottom #profitable {
+  background: #6F0BBB; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c1053, #6F0BBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+.Superiority_two .Superiority_Bottom #insurance {
+  background: #6F0BBB; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c1053, #6F0BBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
 }
 
 .Info_deposit_box {

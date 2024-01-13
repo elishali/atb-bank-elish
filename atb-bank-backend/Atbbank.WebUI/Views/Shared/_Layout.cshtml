@@ -33,7 +33,7 @@
       content="https://atb.az/wp-content/plugins/atb-core/assets/success.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="assets/images/logo.svg" />
+    <link rel="icon" href="~/assets/images/logo.svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -41,8 +41,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="~/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/assets/css/style.css" />
   </head>
 
   <body>
@@ -62,7 +62,7 @@
       <div class="grid-container-header">
         <div class="item-1" id="firstpartheader">
           <a asp-controller="home" asp-action="index">
-            <img src="./assets/images/logo.svg" alt="" />
+            <img src="~/assets/images/logo.svg" alt="" />
           </a>
         </div>
 
@@ -83,22 +83,15 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <span class="menu-item__title">kreditlər</span>
-                      <a class="child_main" href="./consumption_credit.html"
-                        >istehlak krediti</a
-                      >
-                      <a class="child_main" href="./atb_card_credit.html"
-                        >atb card kredit</a
-                      >
-                      <a class="child_main" href="./deposit_credit.html"
-                        >əmanət qarşılığında kredit</a
-                      >
+                      <a class="child_main" asp-controller="Credits" asp-action="Consumption_credit"
+                        >istehlak krediti</a>
+                      <a class="child_main" asp-controller="Credits" asp-action="Atb_card_credit">atb card kredit</a>
+                      <a class="child_main" asp-controller="Credits" asp-action="Deposit_credit">əmanət qarşılığında kredit</a>
                     </div>
                     <div class="col-lg-6">
                       <span class="menu-item__title">faydalı</span>
-                      <a href="./rates.html">tariflər</a>
-                      <a href="./credit_and_card_payment.html"
-                        >kredit və kart ödənişləri</a
-                      >
+                      <a asp-controller="Credits" asp-action="Rates">tariflər </a>
+                      <a asp-controller="Credits" asp-action="Credit_and_card_payment">kredit və kart ödənişləri</a>
                     </div>
                   </div>
                 </div>
@@ -111,28 +104,18 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <span class="menu-item__title">kartlar</span>
-                      <a class="child_main" href="./atb_card.html">atb card</a>
-                      <a class="child_main" href="./atb_card_credit.html"
-                        >atb card kredit</a
-                      >
-                      <a class="child_main" href="./atb_card_premium.html"
-                        >atb card premium</a
-                      >
-                      <a class="child_main" href="./atb_junior.html"
-                        >atb junior</a
-                      >
+                                        <a class="child_main" asp-controller="Cards" asp-action="Atb_card">atb card</a>
+                                        <a class="child_main" asp-controller="Cards" asp-action="Atb_card_credit">atb card kredit</a>
+                                        <a class="child_main" asp-controller="Cards" asp-action="Atb_card_premium">atb card premium</a>
+                                        <a class="child_main" asp-controller="Cards" asp-action="Atb_junior">atb junior</a>
                       <a class="child_main" href="https://old.atb.az/cb/">cashback</a>
                     </div>
                     <div class="col-lg-6">
                       <span class="menu-item__title">faydalı</span>
-                      <a href="./rates.html">tariflər</a>
-                      <a href="./sms.html">sms bildirişi</a>
-                      <a href="./services_of_card.html"
-                        >kartlar üzrə xidmətlər</a
-                      >
-                      <a href="./restrictions.html"
-                        >kart əməliyyatlarında məhdudiyyətlər</a
-                      >
+                                        <a asp-controller="Cards" asp-action="Rates">tariflər</a>
+                                        <a asp-controller="Cards" asp-action="Sms">sms bildirişi</a>
+                                        <a asp-controller="Cards" asp-action="Services_of_card">kartlar üzrə xidmətlər</a>
+                                        <a asp-controller="Cards" asp-action="Restrictions">kart əməliyyatlarında məhdudiyyətlər</a>
                     </div>
                   </div>
                 </div>
@@ -145,19 +128,13 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <span class="menu-item__title">ipoteka</span>
-                      <a class="child_main" href="./mortgage.html"
-                        >ipoteka krediti</a
-                      >
-                      <a class="child_main" href="./good_mortage.html"
-                        >güzəştli ipoteka krediti</a
-                      >
-                      <a class="child_main" href="./MIDA.html"
-                        >"MİDA" MMC xətti ilə güzəştli ipoteka krediti</a
-                      >
+                      <a class="child_main" asp-controller="Mortgages" asp-action="Mortgage">ipoteka krediti</a>
+                      <a class="child_main" asp-controller="Mortgages" asp-action="Good_mortage">güzəştli ipoteka krediti</a>
+                      <a class="child_main" asp-controller="Mortgages" asp-action="MIDA">"MİDA" MMC xətti ilə güzəştli ipoteka krediti</a>
                     </div>
                     <div class="col-lg-6">
                       <span class="menu-item__title">faydalı</span>
-                      <a href="./rates.html">tariflər</a>
+                      <a asp-controller="Mortgages" asp-action="Rates">tariflər</a>
                     </div>
                   </div>
                 </div>
@@ -170,13 +147,11 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <span class="menu-item__title">əmanətlər</span>
-                      <a class="child_main" href="./classic_deposit.html"
-                        >klassik əmanət</a
-                      >
+                      <a class="child_main" asp-controller="Deposits" asp-action="Classic_deposit">klassik əmanət</a>
                     </div>
                     <div class="col-lg-6">
                       <span class="menu-item__title">faydalı</span>
-                      <a href="./rates.html">tariflər</a>
+                      <a asp-controller="Deposits" asp-action="Rates">tariflər</a>
                     </div>
                   </div>
                 </div>
@@ -189,23 +164,15 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <span class="menu-item__title">onlayn</span>
-                      <a class="child_main" href="./reference.html"
-                        >arayışın onlayn sifarişi</a
-                      >
-                      <a class="child_main" href="./update_card.html"
-                        >kartın yenilənməsi</a
-                      >
-                      <a class="child_main" href="./atb360.html">atb 360</a>
-                      <a class="child_main" href="./apple_pay.html"
-                        >Apple Pay</a
-                      >
-                      <a class="child_main" href="./google_pay.html"
-                        >Google Pay</a
-                      >
+                      <a class="child_main" asp-controller="Online" asp-action="Reference">arayışın onlayn sifarişi</a>
+                      <a class="child_main" asp-controller="Online" asp-action="Update_card">kartın yenilənməsi</a>
+                      <a class="child_main" asp-controller="Online" asp-action="Atb360">atb 360</a>
+                      <a class="child_main" asp-controller="Online" asp-action="Apple_pay">Apple Pay</a>
+                      <a class="child_main" asp-controller="Online" asp-action="Google_pay">Google Pay</a>
                     </div>
                     <div class="col-lg-6">
                       <span class="menu-item__title">faydalı</span>
-                      <a href="./rates.html">tariflər</a>
+                      <a asp-controller="Online" asp-action="Rates">tariflər</a>
                     </div>
                   </div>
                 </div>
@@ -218,25 +185,17 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <span class="menu-item__title">xidmətlər</span>
-                      <a class="child_main" href="./depozit_boxs.html"
-                        >depozit qutuları</a
-                      >
-                      <a class="child_main" href="./exchange_method.html"
-                        >valyuta mübadiləsi əməliyyatları</a
-                      >
-                      <a class="child_main" href="./correspondent_account.html"
-                        >müxbir hesablara xidmət</a
-                      >
+                      <a class="child_main" asp-controller="Other" asp-action="Depozit_boxs">depozit qutuları</a>
+                      <a class="child_main" asp-controller="Other" asp-action="Exchange_method">valyuta mübadiləsi əməliyyatları</a>
+                      <a class="child_main" asp-controller="Other" asp-action="Correspondent_account">müxbir hesablara xidmət</a>
                       <a
                         class="child_main"
-                        href="settlement_cashier_service.html"
-                        >hesablaşma-kassa xidməti</a
-                      >
+                        asp-controller="Other" asp-action="Settlement_cashier_service">hesablaşma-kassa xidməti</a>
                     </div>
                     <div class="col-lg-6">
                       <span class="menu-item__title">faydalı</span>
-                      <a href="./rates.html">tariflər</a>
-                      <a href="./3d_secure.html">3D secure</a>
+                      <a asp-controller="Other" asp-action="Rates">tariflər</a>
+                      <a asp-controller="Other" asp-action="Theree_d_secure">3D secure</a>
                       <a href="https://bankmarket.az/home">bank market</a>
                     </div>
                   </div>
@@ -254,7 +213,7 @@
               </button>
             </div>
             <div class="col-lg-3">
-              <a href="./atb360.html" id="atb360">atb 360</a>
+              <a  href="~/atb360.html" id="atb360">atb 360</a>
             </div>
             <div class="col-lg-1">
               <div class="lang" onclick="changelang()">
@@ -269,11 +228,10 @@
                   BANK HAQQINDA <i class="fa-solid fa-chevron-down"></i>
                 </button>
                 <div class="nav_bank_info-content">
-                  <a href="./bank_information.html">bank məlumatları</a>
+                  <a asp-controller="Bank" asp-action="Bank_information">bank məlumatları</a>
                   <a href="https://atb.az/career/">karyera mərkəzi</a>
                   <a href="https://atb.az/reports/"
-                    >məlumatların açıqlaması</a
-                  >
+                    >məlumatların açıqlaması</a >
                   <a href="https://atb.az/news/">xəbərlər</a>
                   <a href="https://atb.az/cc/">bankla əlaqə</a>
                   <a href="https://atb.az/feedback/">irad və təklflər</a>
@@ -311,7 +269,7 @@
                   </th>
                   <th><a href="https://atb.az/career/">karyera mərkəzi</a></th>
                   <th>
-                    <a href="./bank_information.html">bank məlumatları</a>
+                   <a asp-controller="Bank" asp-action="Bank_information">bank məlumatları</a>
                   </th>
                   <th><a href="https://atb.az/tehlukesizliyiniz/">təhlükəsizliyiniz</a></th>
                 </tr>
@@ -319,49 +277,35 @@
               <tbody>
                 <tr>
                   <td>
-                    <a href="./consumption_credit.html" class="left_nav_option"
-                      >istehlak krediti</a
-                    >
+                      <a asp-controller="Credits" asp-action="Consumption_credit" class="left_nav_option">istehlak krediti</a>
                   </td>
                   <td class="footer_td">
-                    <a href="./atb_card.html" class="other_nav_option"
-                      >atb cart</a
-                    >
+                    <a asp-controller="Cards" asp-action="Atb_card" class="other_nav_option">atb cart</a>
                   </td>
                   <td class="footer_td">
-                    <a href="./rates.html" class="other_nav_option">tariflər</a>
+                   <a asp-controller="Cards" asp-action="Rates" class="other_nav_option">tariflər</a>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <a href="./atb_card_credit.html" class="left_nav_option"
-                      >atb card kredit</a
-                    >
+                   <a asp-controller="Cards" asp-action="Atb_card_credit" class="left_nav_option">atb card kredit</a>
                   </td>
                   <td class="footer_td">
-                    <a href="./atb_card_premium.html" class="other_nav_option"
-                      >atb cart premium</a
-                    >
+                   <a asp-controller="Cards" asp-action="Atb_card_premium" class="other_nav_option">atb cart premium</a>
                   </td>
                   <td class="footer_td">
-                    <a href="./classic_deposit.html" class="other_nav_option"
-                      >"klassik" əmanət</a
-                    >
+                   <a asp-controller="Deposits" asp-action="Classic_deposit" class="other_nav_option">"klassik" əmanət</a>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <a href="./atb360.html" class="left_nav_option">atb 360</a>
+                   <a asp-controller="Online" asp-action="Atb360" class="left_nav_option">atb 360</a>
                   </td>
                   <td class="footer_td">
-                    <a href="./atb_junior.html" class="other_nav_option"
-                      >atb card junior</a
-                    >
+                   <a asp-controller="Cards" asp-action="Atb_junior" class="other_nav_option">atb card junior</a>
                   </td>
                   <td class="footer_td">
-                    <a href="./update_card.html" class="other_nav_option"
-                      >kartın yenilənməsi</a
-                    >
+                   <a asp-controller="Online" asp-action="Update_card" class="other_nav_option">kartın yenilənməsi</a>
                   </td>
                 </tr>
               </tbody>
@@ -370,7 +314,7 @@
         </div>
         <div class="col-lg-2">
           <a asp-controller="home" asp-action="index">
-            <img id="logo_atb" src="./assets/images/logo.svg" alt="" />
+            <img id="logo_atb" src="~/assets/images/logo.svg" alt="" />
           </a>
         </div>
         <div class="bottom_footer" id="bottom_footer_2">
@@ -412,7 +356,7 @@
                         rel="noopener noreferrer"
                         title="ADIF "
                       >
-                        <img src="./assets/images/adif_logo.png" alt="" />
+                        <img src="~/assets/images/adif_logo.png" alt="" />
                       </a>
                     </div>
                     <div class="col-lg-6">
@@ -422,7 +366,7 @@
                         rel="noopener noreferrer"
                         title="infobank"
                       >
-                        <img src="./assets/images/infobank_logo.png" alt="" />
+                        <img src="~/assets/images/infobank_logo.png" alt="" />
                       </a>
                     </div>
                   </div>
@@ -436,7 +380,7 @@
                         rel="noopener noreferrer"
                         title="Merkezi Bank"
                       >
-                        <img src="./assets/images/armb_logo.png" alt="" />
+                        <img src="~/assets/images/armb_logo.png" alt="" />
                       </a>
                     </div>
                     <div class="col-lg-6">
@@ -446,7 +390,7 @@
                         rel="noopener noreferrer"
                         title="Azerbaycan Investisiya Holdinq"
                       >
-                        <img src="./assets/images/aih_logo.png" alt="" />
+                        <img src="~/assets/images/aih_logo.png" alt="" />
                       </a>
                     </div>
                   </div>
@@ -488,16 +432,16 @@
       </button>
     </div>
 
-    <script src="./assets/js/calculator.js"></script>
-    <script src="./assets/js/currency.js"></script>
-    <script src="./assets/js/chat.js"></script>
-    <script src="./assets/js/lang.js"></script>
-    <script src="./assets/js/nav.js"></script>
-    <script src="./assets/js/exchange.js"></script>
-    <script src="./assets/js/OpenCashOpenDeposit.js"></script>
-    <script src="./assets/js/OpenCashOrder.js"></script>
-    <script src="./assets/js/slider.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="~/assets/js/calculator.js"></script>
+    <script src="~/assets/js/currency.js"></script>
+    <script src="~/assets/js/chat.js"></script>
+    <script src="~/assets/js/lang.js"></script>
+    <script src="~/assets/js/nav.js"></script>
+    <script src="~/assets/js/exchange.js"></script>
+    <script src="~/assets/js/OpenCashOpenDeposit.js"></script>
+    <script src="~/assets/js/OpenCashOrder.js"></script>
+    <script src="~/assets/js/slider.js"></script>
+    <script src="~/assets/js/app.js"></script>
   </body>
 </html>
 

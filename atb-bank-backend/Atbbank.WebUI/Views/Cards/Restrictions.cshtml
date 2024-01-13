@@ -1,0 +1,150 @@
+﻿
+@{
+    ViewData["Title"] = "Restrictions";
+}
+
+<div class="other_page_banner_2">
+    <img src="~/assets/images/rates.jpg" style="width: 100%" />
+    <div class="text_sms">
+        <p>kart əməliyyatlarına</p>
+        <h2>
+            tətbiq edilən <br />
+            məhdudiyyətlər
+        </h2>
+    </div>
+</div>
+
+<div class="maincontainer">
+    <div>
+        <h3>&nbsp</h3>
+        <ul>
+            <li>
+                POS terminallar vasitəsilə aparılan əməliyyatlarda PİN kod daxil
+                etmədən <b>1 saat</b> ərzində <b>50 AZN</b> -dən yuxarı ( 100
+                AZN-dək ) maksimum 4 əməliyyat <br />
+                icra edilə bilər
+            </li>
+            <li>
+                kartın maqnit zolağından istifadə etməklə <b>24 saat</b> ərzində
+                ümumilikdə <b>250 ABŞ dolları</b> məbləğindən artıq əməliyyat
+                aparılmır
+            </li>
+            <li>
+                “3D secure” xidmətini dəstəkləməyən internet saytlarında
+                <b>24 saat</b> ərzində aparılacaq əməliyyatların sayı <b>7</b> -dən
+                ( uğursuz əməliyyatlar da say limitinə daxil edilir ), hər əməliyyat
+                üzrə məbləğ isə <b>1000 AZN</b>
+                və onun valyuta ekvivalentindən artıq ola bilməz
+            </li>
+            <li>
+                <b>2</b> və daha çox ölkədə <b>2 saat</b> ərzində yalnız
+                <b>1</b> əməliyyat həyata keçirilir
+            </li>
+            <li>
+                Yaponiya, Braziliya, Filippin və Malayziyada kart fiziki olaraq
+                iştirak etmədən gündəlik əməliyyat sayı <b>2</b>-dən, cəmi məbləğ
+                isə <b>100 AZN</b> və ya onun valyuta ekvivalentindən çox ola bilməz
+            </li>
+        </ul>
+        <p>
+            qeyd: kart sahibinin müraciətinə əsasən məhdudiyyətlər üzrə meyarlara
+            dəyişiklik edilə bilər
+        </p>
+    </div>
+    <div class="Useful_Info">
+        <h4>faydalı məlumat</h4>
+        <div class="interest_rates">
+            <div class="row">
+                <div class="col-lg-11" id="interest_rates_tittle">
+                    faiz dərəcələri
+                </div>
+                <div class="col-lg-1">
+                    <button class="subscribe"
+                            onclick="Open_interest_rates_menu()"
+                            id="Open_interest_rates_menu">
+                        <i class="fa-solid fa-plus" id="openiconcon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="interest_rates_menu" id="interest_rates_menu">
+                <table>
+                    <tr>
+                        <th>müddət</th>
+                        <th>faiz dərəcəsi</th>
+                        <th>xidmət haqqı</th>
+                    </tr>
+                    <tr>
+                        <td>12 ayadək</td>
+                        <td>11.5%</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>24 ayadək</td>
+                        <td>13.5%</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>36 ayadək</td>
+                        <td>14%</td>
+                        <td>0.5% (min. 50 AZN)</td>
+                    </tr>
+                    <tr>
+                        <td>48 ayadək</td>
+                        <td>15%</td>
+                        <td>1% (min. 50 AZN)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="conditions">
+            <div class="row">
+                <div class="col-lg-11" id="contittle">şərtlər</div>
+                <div class="col-lg-1">
+                    <button class="subscribe"
+                            onclick="OpenConditionMenu()"
+                            id="OpenConditionMenu">
+                        <i class="fa-solid fa-plus" id="openiconcon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="condition_menu" id="condition_menu">
+                <ul>
+                    <li>məbləğ: <b>300 – 30 000 AZN</b></li>
+                    <li>30 000 AZN-dək <b>zaminsiz</b></li>
+                    <li>valyuta: <b>AZN</b></li>
+                    <li>müddət: <b>3 – 48 ay</b></li>
+                    <li>ödəniş şərti: <b>annuitet</b></li>
+                    <li>sığorta: <b>tələb olunmur</b></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="requirements">
+            <div class="row">
+                <div class="col-lg-11" id="requirementstittle">tələblər</div>
+                <div class="col-lg-1">
+                    <button class="subscribe"
+                            onclick="OpenrequirementsMenu()"
+                            id="OpenrequirementsMenu">
+                        <i class="fa-solid fa-plus" id="openiconcon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="requirements_menu" id="requirements_menu">
+                <ul>
+                    <li>yaş həddi: <b>18-70</b></li>
+                    <li>
+                        iş yeri<b> rəsmi iş yeri olan istənilən şəxs / təqaüdçü</b>
+                    </li>
+                    <li>
+                        iş stajı:
+                        <b>6 ay, sonuncu iş yerində fasiləsiz keçidlə minimum 3 ay</b>
+                    </li>
+                    <li>əməkhaqqı: <b>minimum tələb yoxdur</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

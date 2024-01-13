@@ -1,0 +1,213 @@
+﻿
+@{
+    ViewData["Title"] = "Services_of_card";
+}
+
+<div class="other_page_banner_2">
+    <img src="~/assets/images/rates.jpg" style="width: 100%" />
+    <div class="text_sms">
+        <h2>kartlar üzrə xidmətlər</h2>
+    </div>
+</div>
+
+<div class="maincontainer">
+    <div class="sms_main">
+        <p><b>ödəniş kartının balansını necə artırmaq olar?</b></p>
+        <p class="d-inline" style="text-decoration: underline">
+            bankın cash-in tipli bankomatları vasitəsilə
+        </p>
+        <ul>
+            <li>kartı bankomata daxil edin</li>
+            <li>xidmət olunacaq dili seçin</li>
+            <li>“PİN” kodu daxil edin</li>
+            <li>menyudan “Cash in” əməliyyatını seçin</li>
+            <li>karta mədaxil ediləcək əskinasın valyutasını seçin</li>
+            <li>
+                əskinasları bankomatın müvafiq hissəsinə daxil edərək təsdiq edin
+            </li>
+            <li>
+                bankomat tərəfindən çek təqdim olunacaq və mədaxil haqqında SMS
+                bildiriş göndəriləcəkdir
+            </li>
+        </ul>
+        <p class="d-inline" style="text-decoration: underline">
+            MilliÖN və e-manat terminalları vasitəsilə
+        </p>
+        <ul>
+            <li>menyudan “Bank xidmətləri”ni seçin</li>
+            <li>açılmış siyahıdan “Azər Türk Bank”ı seçin</li>
+            <li>
+                “Ödəniş məlumatı” pəncərəsindən “AzerTurkBankNumber” bəndini seçin
+            </li>
+            <li>
+                mədaxil ediləcək kartın 16 rəqəmini daxil etməklə terminala pul
+                əskinası daxil edərək əməliyyatı tamamlayın
+            </li>
+            <li>
+                sayt vasitəsilə balans artırılan zaman mədaxil ediləcək kartın 16
+                rəqəmi daxil edildikdən sonra məbləğ qeyd olunur və həmin vəsaitin
+                silinəcəyi kartın <br />
+                tələb olunan məlumatları daxil edilir
+            </li>
+        </ul>
+        <p class="d-inline" style="text-decoration: underline">
+            “kartdan karta” xidməti vasitəsilə
+        </p>
+        <ul>
+            <li>
+                <a href="~/#">kartdan karta</a> səhifəsinə daxil olmaqla,<a href="~/#">atb360 mobil tətbiqi</a>
+                və ya bankın ATM-lərindən “kartdan karta” xidməti vasitəsilə digər
+                banklar tərəfindən <br />emissiya edilmiş kartdan Azər Türk Banka
+                məxsus kartın balansı artıra bilərsiniz
+            </li>
+            <li>
+                yuxarıda qeyd edilən bütün hallarda karta mədaxil edilən vəsait
+                dərhal balansda əks olunur
+            </li>
+        </ul>
+        <p><b>card to card — kartdan karta xidməti</b></p>
+        <p class="d-inline" style="text-decoration: underline">
+            bankın ATM-ləri vasitəsilə
+        </p>
+        <ul>
+            <li>kartı bankomata daxil edin</li>
+            <li>xidmət olunacaq dili seçin</li>
+            <li>“PİN” kodu daxil edin</li>
+            <li>
+                ekranda əks olunmuş menyudan “kartdan karta köçürmə” bəndini seçin
+            </li>
+            <li>köçürmənin valyutasını seçin</li>
+            <li>
+                vəsaiti qəbul edəcək şəxsin kartının üzərində əks olunmuş 16 rəqəmli
+                nömrəni daxil edin
+            </li>
+            <li>köçürmə ediləcək məbləği daxil edərək təsdiq edin</li>
+            <li>
+                əməliyyat uğurla tamamlandığı zaman bankomat tərəfindən çek təqdim
+                olunacaq və mədaxil haqqında SMS bildiriş göndəriləcəkdir
+            </li>
+        </ul>
+        <p class="d-inline" style="text-decoration: underline">
+            atb 360 mobil tətbiqi vasitəsilə
+        </p>
+        <ul>
+            <li>
+                “vəsaitlərim” bölməsindən köçürmənin silinəcəyi kart hesabınıza
+                daxil olun
+            </li>
+            <li>ekranda əks olunmuş menyudan “köçürmə” bəndini seçin</li>
+            <li>
+                vəsaiti qəbul edəcək şəxsin kartının üzərində əks olunmuş 16 rəqəmli
+                nömrəni daxil edin və “növbəti” düyməsini seçin
+            </li>
+            <li>köçürmə ediləcək məbləği daxil edərək təsdiq edin</li>
+        </ul>
+        <p class="d-inline" style="text-decoration: underline">
+            atb.az saytı vasitəsilə
+        </p>
+        <ul>
+            <li>
+                <a href="~/#">kartdan karta</a> səhifəsinə daxil olub köçürmənin
+                silinəcəyi kartın və vəsaiti qəbul edəcək kartın məlumatlarını daxil
+                edərək təsdiqləyin
+            </li>
+        </ul>
+    </div>
+
+    <div class="Useful_Info">
+        <h4>faydalı məlumat</h4>
+        <div class="interest_rates">
+            <div class="row">
+                <div class="col-lg-11" id="interest_rates_tittle">
+                    faiz dərəcələri
+                </div>
+                <div class="col-lg-1">
+                    <button class="subscribe"
+                            onclick="Open_interest_rates_menu()"
+                            id="Open_interest_rates_menu">
+                        <i class="fa-solid fa-plus" id="openiconcon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="interest_rates_menu" id="interest_rates_menu">
+                <table>
+                    <tr>
+                        <th>müddət</th>
+                        <th>faiz dərəcəsi</th>
+                        <th>xidmət haqqı</th>
+                    </tr>
+                    <tr>
+                        <td>12 ayadək</td>
+                        <td>11.5%</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>24 ayadək</td>
+                        <td>13.5%</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>36 ayadək</td>
+                        <td>14%</td>
+                        <td>0.5% (min. 50 AZN)</td>
+                    </tr>
+                    <tr>
+                        <td>48 ayadək</td>
+                        <td>15%</td>
+                        <td>1% (min. 50 AZN)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="conditions">
+            <div class="row">
+                <div class="col-lg-11" id="contittle">şərtlər</div>
+                <div class="col-lg-1">
+                    <button class="subscribe"
+                            onclick="OpenConditionMenu()"
+                            id="OpenConditionMenu">
+                        <i class="fa-solid fa-plus" id="openiconcon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="condition_menu" id="condition_menu">
+                <ul>
+                    <li>məbləğ: <b>300 – 30 000 AZN</b></li>
+                    <li>30 000 AZN-dək <b>zaminsiz</b></li>
+                    <li>valyuta: <b>AZN</b></li>
+                    <li>müddət: <b>3 – 48 ay</b></li>
+                    <li>ödəniş şərti: <b>annuitet</b></li>
+                    <li>sığorta: <b>tələb olunmur</b></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="requirements">
+            <div class="row">
+                <div class="col-lg-11" id="requirementstittle">tələblər</div>
+                <div class="col-lg-1">
+                    <button class="subscribe"
+                            onclick="OpenrequirementsMenu()"
+                            id="OpenrequirementsMenu">
+                        <i class="fa-solid fa-plus" id="openiconcon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="requirements_menu" id="requirements_menu">
+                <ul>
+                    <li>yaş həddi: <b>18-70</b></li>
+                    <li>
+                        iş yeri<b> rəsmi iş yeri olan istənilən şəxs / təqaüdçü</b>
+                    </li>
+                    <li>
+                        iş stajı:
+                        <b>6 ay, sonuncu iş yerində fasiləsiz keçidlə minimum 3 ay</b>
+                    </li>
+                    <li>əməkhaqqı: <b>minimum tələb yoxdur</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,174 @@
+﻿
+@{
+    ViewData["Title"] = "Deposit_credit";
+}
+
+<div class="other_page_banner">
+    <img src="~/assets/images/Deposit_credit.png" style="width:100%">
+    <div class="text">
+        <h2>əmanətin 90% <br> qədər kredit </h2>
+        <button class=" subscribe"><a href="~/branchs.html">filialı tapmaq</a></button>
+    </div>
+</div>
+
+<div class="maincontainer">
+
+    <div class="Cards_Two">
+        <div class="row ">
+            <div class="col-lg-3 card_info">
+                <h2>təminatlı</h2>
+                <p>nəticə</p>
+            </div>
+            <div class="col-lg-3 card_info">
+                <h2>əmanətin</h2>
+                <p>90%-dək kredit</p>
+            </div>
+            <div class="col-lg-3 card_info">
+                <h2>əmanət üzrə</h2>
+                <p>+3%</p>
+            </div>
+            <div class="col-lg-3 card_info">
+                <h2>filialda</h2>
+                <p>sürətli rəsmiləşdirmə</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="Superiority">
+        <div class=" Superiority_Top">
+            <div class="row">
+                <div class="col-lg-6 easy_text">
+                    <h2>kredit ayrılmasına zəmanət</h2>
+                    <p>atb-də əmanətiniz varsa, kredit imkanına sahibsiniz</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="~/assets/images/deposit_spotify.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Superiority_Bottom">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="Superiority_One">
+                        <div class="row">
+                            <div class=" col-lg-6">
+                                <h4>illik faiz dərəcəsi</h4>
+                                <p> əmanətin faizi + 3%</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="~/assets/images/deposit_spotify1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="Superiority_Two">
+                        <div class="row">
+                            <div class=" col-lg-6">
+                                <h4>atb360 mobil tətbiqi</h4>
+                                <p> tətbiq ödəniş vaxtlarını sizə xatırladır və nə qədər kredit qalığınızın olduğuna da baxa bilirsiniz</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="~/assets/images/deposit_spotify2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="Useful_Info">
+        <h4>faydalı məlumat</h4>
+        <div class="interest_rates">
+            <div class="row">
+                <div class="col-lg-11" id="interest_rates_tittle">
+                    faiz dərəcələri
+                </div>
+                <div class="col-lg-1">
+                    <button class="subscribe" onclick="Open_interest_rates_menu()" id="Open_interest_rates_menu"><i class="fa-solid fa-plus" id="openiconcon"></i></button>
+                </div>
+            </div>
+            <div class="interest_rates_menu" id="interest_rates_menu">
+                <table>
+                    <tr>
+                        <th>müddət</th>
+                        <th>faiz dərəcəsi</th>
+                        <th>xidmət haqqı</th>
+                    </tr>
+                    <tr>
+                        <td>12 ayadək</td>
+                        <td>11.5%</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>24 ayadək</td>
+                        <td>13.5%</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>36 ayadək</td>
+                        <td>14%</td>
+                        <td>0.5% (min. 50 AZN)</td>
+                    </tr>
+                    <tr>
+                        <td>48 ayadək</td>
+                        <td>15%</td>
+                        <td>1% (min. 50 AZN)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="conditions">
+            <div class="row">
+                <div class="col-lg-11" id="contittle">
+                    şərtlər
+                </div>
+                <div class="col-lg-1">
+                    <button class="subscribe" onclick="OpenConditionMenu()" id="OpenConditionMenu"><i class="fa-solid fa-plus" id="openiconcon"></i></button>
+                </div>
+            </div>
+            <div class="condition_menu" id="condition_menu">
+
+                <ul>
+                    <li>məbləğ: <b>300 – 30 000 AZN</b> </li>
+                    <li>30 000 AZN-dək <b>zaminsiz</b></li>
+                    <li>valyuta: <b>AZN</b></li>
+                    <li>müddət:  <b>3 – 48 ay</b></li>
+                    <li>ödəniş şərti: <b>annuitet</b></li>
+                    <li>sığorta: <b>tələb olunmur</b></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="requirements">
+            <div class="row">
+                <div class="col-lg-11" id="requirementstittle">
+                    tələblər
+                </div>
+                <div class="col-lg-1">
+                    <button class="subscribe" onclick="OpenrequirementsMenu()" id="OpenrequirementsMenu"><i class="fa-solid fa-plus" id="openiconcon"></i></button>
+                </div>
+            </div>
+            <div class="requirements_menu" id="requirements_menu">
+
+                <ul>
+                    <li>yaş həddi: <b>18-70</b> </li>
+                    <li>iş yeri<b> rəsmi iş yeri olan istənilən şəxs / təqaüdçü</b></li>
+                    <li>iş stajı: <b>6 ay, sonuncu iş yerində fasiləsiz keçidlə minimum 3 ay</b></li>
+                    <li>əməkhaqqı:  <b>minimum tələb yoxdur</b></li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+

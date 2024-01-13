@@ -1,0 +1,331 @@
+﻿
+@{
+    ViewData["Title"] = "Consumption_credit";
+}
+
+
+<div class="other_page_banner">
+    <img src="~/assets/images/slider3.png" style="width:100%">
+    <div class="text">
+        <h2 id="atbfriday">atbfriday <br> istehlak kreditləri <br> 11.5%-dən başlayaraq</h2>
+        <button class="banner_btn subscribe"><a href="~/"#">sifariş</a></button>
+        <button class="banner_btn_2 subscribe" id="banner_btn_2"><a href="~/"#">kalkulyator</a></button>
+    </div>
+</div>
+
+
+
+<div class="maincontainer">
+    <div class="Cards_Two">
+        <div class="row ">
+            <div class="col-lg-3 card_info">
+                <h2>kreditin məbləği</h2>
+                <p>30 000 AZN-dək</p>
+            </div>
+            <div class="col-lg-3 card_info">
+                <h2>30 000 azn-dək</h2>
+                <p>zaminsiz kredit</p>
+            </div>
+            <div class="col-lg-3 card_info">
+                <h2>müddət</h2>
+                <p>3-48 ay</p>
+            </div>
+            <div class="col-lg-3 card_info">
+                <h2>faiz dərəcəsi</h2>
+                <p>illik 11,5%</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="Superiority">
+        <h2>istehlak kreditinin üstünlükləri</h2>
+        <div class="Superiority_Top" style="background-image: url(../assets/images/consumption_credit.jpg);">
+            <div class="row">
+                <div class="col-lg-10 easy_text">
+                    <h2>asan ödəniş imkanı</h2>
+                    <p>aylıq kredit ödənişini mobil tətbiqdən və ya <br> rəsmi saytdan rahat edin</p>
+                </div>
+                <div class="col-lg-2 easy_app">
+                    <p>tətbiqi <br> yükləyin</p>
+                    <a href="~/consumption_credit.html" target="_blank"><img src="~/assets/images/qr.svg" alt=""></a>
+                    <br>
+                    <a href="~/consumption_credit.html" target="_blank"><img src="~/assets/images/app.svg" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="Superiority_Bottom">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="Superiority_One">
+                        <div class="row">
+                            <div class=" col-lg-6">
+                                <h4>sürətli onlayn <br> sifariş</h4>
+                                <p> lazım olan məbləği seçərək <br> onlayn sifariş edin</p>
+                            </div>
+                            <div class="col-lg-6 ">
+                                <img src="~/assets/images/fasty.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="Superiority_Two">
+                        <div class="row">
+                            <div class=" col-lg-6">
+                                <h4>atb360 mobil tətbiqi</h4>
+                                <p> tətbiq ödəniş vaxtlarını sizə xatırladır və nə qədər kredit qalığınızın olduğuna da baxa bilirsiniz</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="~/assets/images/atb360.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Calculation">
+        <div class="cash_main" id="cash_main">
+            <h2>onlayn kredit sifarişi</h2>
+            <div class="cash">
+                <div class="row">
+                    <div class="col-lg-8 cash_left">
+                        <div class="main">
+                            <div class="input">
+                                <input id="input1" type="text">
+                                <p>hansı məbləğ arzunuzu reallaşdırar?</p>
+                            </div>
+                            <div class="range">
+                                <input id="range1" type="range" min="1" max="35000" value="0" step="1">
+                            </div>
+                        </div>
+                        <div class="main">
+                            <div class="input">
+                                <input id="input2" type="text">
+                                <p>müddəti seçin</p>
+                            </div>
+                            <div class="range">
+                                <input id="range2" type="range" min="1" max="59" value="0" step="1">
+                            </div>
+                        </div>
+                        <div class="main">
+                            <div class="input">
+                                <input id="input3" type="text">
+                                <p>faiz dərəcəsi (%)</p>
+                            </div>
+                            <div class="range">
+                                <input id="range3" type="range" min="11.9" max="20.9" value="0" step="0.1">
+                            </div>
+                        </div>
+                        <div class="main_last">
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <label class="cus-checkbox__label">
+                                        <input type="checkbox" class="cus-checkbox__input" checked="">
+                                        <span class="cus-checkbox__check"></span>
+                                    </label>
+                                </div>
+                                <div class="col-lg-11">
+                                    <p>
+                                        "sifariş" düyməsini basaraq
+                                        <u>
+                                            <a href="~/"~/security.html">müraciət qaydaları</a>
+                                        </u> ilə razılaşmış olursunuz
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 cash_right">
+                        <p>Bizim təklif</p>
+                        <div class="info">
+                            <p>Aylıq ödəniş</p>
+                            <h2 id="pertotal">₼</h2>
+                        </div>
+                        <div class="info">
+                            <p>Ümumi məbləğ</p>
+                            <h2 id="total">₼</h2>
+                        </div>
+                        <div class="button">
+                            <button id="button">hesabla</button>
+                        </div>
+                        <div class="button" id="cash_order_btn">
+                            <button id="OpenCashOrder" onclick="OpenCashOrder()">sifariş</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="cash_order" id="cash_order">
+            <h2>onlayn muraciət</h2>
+            <p>istənilən məqsəd üçün nağd kredit</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" placeholder="kredit məbləği (maks. 30 000 azn)">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="kredit müddəti (48 ayadək)">
+                </div>
+            </div>
+            <div class="city">
+                <select>
+                    <option value="Şəhər">Şəhər</option>
+                    <option value="Bakı">Bakı</option>
+                    <option value="Şirvan">Şirvan</option>
+                    <option value="Gəncə">Gəncə</option>
+                    <option value="Naxçıvan">Naxçıvan</option>
+                </select>
+                <hr>
+            </div>
+            <p>şəxsi məlumat</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" placeholder="ad, soyad">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="fin kod">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="tel" placeholder="telefon">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" placeholder="iş yeri (qurumun adı)">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="kredit müddəti (48 ayadək)">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" placeholder="iş stajı (ay)">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="rəsmi gəlit (rəqəmlə)">
+                </div>
+            </div>
+            <input type="text" placeholder="digər banklara olan aylıq ödəniş (əgər varsa) və ya zaminlik">
+
+            <div class="cash_order_last">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <label class="cus-checkbox__label">
+                            <input type="checkbox" class="cus-checkbox__input" checked="">
+                            <span class="cus-checkbox__check"></span>
+                        </label>
+                    </div>
+                    <div class="col-lg-11">
+                        <p>məlumatlarımın Asan Finansdan əldə edilməsi və AKB reyestrində sorğu edilməsinə razıyam</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button">
+                <button id="button">sifariş</button>
+            </div>
+
+            <p>*bütün bəndlərin doldurulması mütləqdir</p>
+
+        </div>
+    </div>
+
+    <div class="Useful_Info">
+        <h4>faydalı məlumat</h4>
+        <div class="interest_rates">
+            <div class="row">
+                <div class="col-lg-11" id="interest_rates_tittle">
+                    faiz dərəcələri
+                </div>
+                <div class="col-lg-1">
+                    <button class="subscribe" onclick="Open_interest_rates_menu()" id="Open_interest_rates_menu"><i class="fa-solid fa-plus" id="openiconcon"></i></button>
+                </div>
+            </div>
+            <div class="interest_rates_menu" id="interest_rates_menu">
+                <table>
+                    <tr>
+                        <th>müddət</th>
+                        <th>faiz dərəcəsi</th>
+                        <th>xidmət haqqı</th>
+                    </tr>
+                    <tr>
+                        <td>12 ayadək</td>
+                        <td>11.5%</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>24 ayadək</td>
+                        <td>13.5%</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>36 ayadək</td>
+                        <td>14%</td>
+                        <td>0.5% (min. 50 AZN)</td>
+                    </tr>
+                    <tr>
+                        <td>48 ayadək</td>
+                        <td>15%</td>
+                        <td>1% (min. 50 AZN)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="conditions">
+            <div class="row">
+                <div class="col-lg-11" id="contittle">
+                    şərtlər
+                </div>
+                <div class="col-lg-1">
+                    <button class="subscribe" onclick="OpenConditionMenu()" id="OpenConditionMenu"><i class="fa-solid fa-plus" id="openiconcon"></i></button>
+                </div>
+            </div>
+            <div class="condition_menu" id="condition_menu">
+
+                <ul>
+                    <li>məbləğ: <b>300 – 30 000 AZN</b> </li>
+                    <li>30 000 AZN-dək <b>zaminsiz</b></li>
+                    <li>valyuta: <b>AZN</b></li>
+                    <li>müddət:  <b>3 – 48 ay</b></li>
+                    <li>ödəniş şərti: <b>annuitet</b></li>
+                    <li>sığorta: <b>tələb olunmur</b></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="requirements">
+            <div class="row">
+                <div class="col-lg-11" id="requirementstittle">
+                    tələblər
+                </div>
+                <div class="col-lg-1">
+                    <button class="subscribe" onclick="OpenrequirementsMenu()" id="OpenrequirementsMenu"><i class="fa-solid fa-plus" id="openiconcon"></i></button>
+                </div>
+            </div>
+            <div class="requirements_menu" id="requirements_menu">
+
+                <ul>
+                    <li>yaş həddi: <b>18-70</b> </li>
+                    <li>iş yeri<b> rəsmi iş yeri olan istənilən şəxs / təqaüdçü</b></li>
+                    <li>iş stajı: <b>6 ay, sonuncu iş yerində fasiləsiz keçidlə minimum 3 ay</b></li>
+                    <li>əməkhaqqı:  <b>minimum tələb yoxdur</b></li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>

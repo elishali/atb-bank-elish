@@ -9,6 +9,7 @@ namespace Atbbank.WebUI.Models.Entities
         public string Description { get; set; }
         public string ImgSrc { get; set; }
         public string Btn { get; set; }
+        public string Url { get; set; }
 
     }
 }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Atbbank.WebUI.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240104144336_CreateSliderAndCards")]
-    partial class CreateSliderAndCards
+    [Migration("20240114161934_usefulcard")]
+    partial class usefulcard
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,7 +24,7 @@ namespace Atbbank.WebUI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Atbbank.WebUI.Models.Entities.Cards", b =>
+            modelBuilder.Entity("Atbbank.WebUI.Models.Entities.Card", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -32,10 +32,15 @@ namespace Atbbank.WebUI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<DateTime>("CreatedAt")
+                    b.Property<string>("CardUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .IsRequired()
                         .HasColumnType("datetime");
 
-                    b.Property<int>("CreatedBy")
+                    b.Property<int?>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("DeletedAt")
@@ -62,7 +67,7 @@ namespace Atbbank.WebUI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cardss", (string)null);
+                    b.ToTable("Cards", (string)null);
                 });
 
             modelBuilder.Entity("Atbbank.WebUI.Models.Entities.Slider", b =>
@@ -78,10 +83,12 @@ namespace Atbbank.WebUI.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<DateTime>("CreatedAt")
+                    b.Property<DateTime?>("CreatedAt")
+                        .IsRequired()
                         .HasColumnType("datetime");
 
-                    b.Property<int>("CreatedBy")
+                    b.Property<int?>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("DeletedAt")
@@ -91,12 +98,13 @@ namespace Atbbank.WebUI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasMaxLength(2000)
                         .HasColumnType("nvarchar(2000)");
 
                     b.Property<string>("ImgSrc")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
 
                     b.Property<DateTime?>("LastModifiedAt")
                         .HasColumnType("datetime");
@@ -109,9 +117,66 @@ namespace Atbbank.WebUI.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Sliders", (string)null);
+                });
+
+            modelBuilder.Entity("Atbbank.WebUI.Models.Entities.UsefulCard", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Btn")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .IsRequired()
+                        .HasColumnType("datetime");
+
+                    b.Property<int?>("CreatedBy")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime");
+
+                    b.Property<int?>("DeletedBy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ImgSrc")
+                        .IsRequired()
+                        .HasColumnType("nvarchar");
+
+                    b.Property<DateTime?>("LastModifiedAt")
+                        .HasColumnType("datetime");
+
+                    b.Property<int?>("LastModifiedBy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UsefulCards", (string)null);
                 });
 #pragma warning restore 612, 618
         }

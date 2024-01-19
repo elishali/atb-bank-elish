@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Atbbank.WebUI.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240104170632_CreateCategories")]
-    partial class CreateCategories
+    [Migration("20240114154947_adddatabasetable")]
+    partial class adddatabasetable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,10 +32,15 @@ namespace Atbbank.WebUI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<DateTime>("CreatedAt")
+                    b.Property<string>("CardUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .IsRequired()
                         .HasColumnType("datetime");
 
-                    b.Property<int>("CreatedBy")
+                    b.Property<int?>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("DeletedAt")
@@ -65,93 +70,6 @@ namespace Atbbank.WebUI.Migrations
                     b.ToTable("Cards", (string)null);
                 });
 
-            modelBuilder.Entity("Atbbank.WebUI.Models.Entities.Category", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime");
-
-                    b.Property<int>("CreatedBy")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime");
-
-                    b.Property<int?>("DeletedBy")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("LastModifiedAt")
-                        .HasColumnType("datetime");
-
-                    b.Property<int?>("LastModifiedBy")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<int?>("ParentId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ParentId");
-
-                    b.ToTable("Categories", (string)null);
-                });
-
-            modelBuilder.Entity("Atbbank.WebUI.Models.Entities.New", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime");
-
-                    b.Property<int>("CreatedBy")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Date")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime");
-
-                    b.Property<int?>("DeletedBy")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(2000)
-                        .HasColumnType("nvarchar(2000)");
-
-                    b.Property<DateTime?>("LastModifiedAt")
-                        .HasColumnType("datetime");
-
-                    b.Property<int?>("LastModifiedBy")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("News", (string)null);
-                });
-
             modelBuilder.Entity("Atbbank.WebUI.Models.Entities.Slider", b =>
                 {
                     b.Property<int>("Id")
@@ -165,10 +83,12 @@ namespace Atbbank.WebUI.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<DateTime>("CreatedAt")
+                    b.Property<DateTime?>("CreatedAt")
+                        .IsRequired()
                         .HasColumnType("datetime");
 
-                    b.Property<int>("CreatedBy")
+                    b.Property<int?>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("DeletedAt")
@@ -184,7 +104,8 @@ namespace Atbbank.WebUI.Migrations
 
                     b.Property<string>("ImgSrc")
                         .IsRequired()
-                        .HasColumnType("nvarchar");
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
 
                     b.Property<DateTime?>("LastModifiedAt")
                         .HasColumnType("datetime");
@@ -196,6 +117,11 @@ namespace Atbbank.WebUI.Migrations
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
 
                     b.HasKey("Id");
 
@@ -215,10 +141,12 @@ namespace Atbbank.WebUI.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<DateTime>("CreatedAt")
+                    b.Property<DateTime?>("CreatedAt")
+                        .IsRequired()
                         .HasColumnType("datetime");
 
-                    b.Property<int>("CreatedBy")
+                    b.Property<int?>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("DeletedAt")
@@ -245,13 +173,6 @@ namespace Atbbank.WebUI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("UsefulCards", (string)null);
-                });
-
-            modelBuilder.Entity("Atbbank.WebUI.Models.Entities.Category", b =>
-                {
-                    b.HasOne("Atbbank.WebUI.Models.Entities.Category", null)
-                        .WithMany()
-                        .HasForeignKey("ParentId");
                 });
 #pragma warning restore 612, 618
         }

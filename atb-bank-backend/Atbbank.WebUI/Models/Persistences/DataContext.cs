@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Atbbank.WebUI.Models.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Atbbank.WebUI.Models.Persistences
 {
@@ -10,6 +11,10 @@ namespace Atbbank.WebUI.Models.Persistences
 
         }
 
+        public DbSet<Card> Cards { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
+        public DbSet<UsefulCard> UsefulCards { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -18,4 +23,6 @@ namespace Atbbank.WebUI.Models.Persistences
         }
 
     }
+
+   
 }

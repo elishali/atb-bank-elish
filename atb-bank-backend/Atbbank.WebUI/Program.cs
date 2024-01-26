@@ -26,6 +26,13 @@ namespace Atbbank.WebUI
             app.UseRouting();
             app.UseEndpoints(cfg =>
             {
+
+                 cfg.MapControllerRoute(
+                 name: "areas",
+                 pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+                );
+
+
                 cfg.MapControllerRoute("default","{controller=home}/{action=index}/{id?}");
             });
 

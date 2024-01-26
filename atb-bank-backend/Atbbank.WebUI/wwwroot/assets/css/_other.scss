@@ -657,6 +657,59 @@
         }
     }
 
+    .Superiority_Bottom{
+        margin-top: 2rem;
+
+        .Superiority_One{
+            border-radius: 15px;
+            background-color: #F4D0001A;
+            min-height: 20px;
+            padding: 35px 34px 40px;
+        }
+
+        .Superiority_Two{
+            border-radius: 16px;
+            background-color: rgba(75,153,210,.09);
+            min-height: 20px;
+            padding: 35px 34px 40px;
+
+
+            i{
+                font-size: 3rem;
+                color: brown;
+                margin-bottom: 1rem;
+            }
+
+            #doc{
+                color: #3b5998;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            ul{
+                margin-top: 1rem;
+                font-size: 18px;
+            }
+
+        }
+
+        #profitable{
+            background: #6F0BBB;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3c1053, #6F0BBB);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #3c1053, #6F0BBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+            color: white;
+        }
+        #insurance{
+            background: #6F0BBB;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3c1053, #6F0BBB);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #3c1053, #6F0BBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
+            color: white;
+        }
+    }
+
 
 }
 

@@ -3,7 +3,7 @@
 namespace Atbbank.WebUI.Areas.AdminPanel.Controllers
 {
     [Area("AdminPanel")]
-    public class UsefulCardController : Controller
+    public class UsefulCardsController : Controller
     {
         public IActionResult Index()
         {

@@ -1,0 +1,15 @@
+﻿.btn i {
+    margin:unset;
+}
+
+th.operation,
+td.operation{
+    min-width:180px;
+    max-width:180px;
+    text-align:right;
+}
+
+    th.operation > *:not(:last-child),
+    td.operation > *:not(:last-child){
+        margin-right:5px;
+    }

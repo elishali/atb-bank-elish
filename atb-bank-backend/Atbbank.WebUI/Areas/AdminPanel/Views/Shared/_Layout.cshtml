@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="~/admin/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="~/admin/assets/css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="~/admin/assets/scss/partials/menu/_pcmenu.html">
+    <link rel="stylesheet" href="~/admin/assets/css/additional.css">
 </head>
 
 <body>
@@ -1204,7 +1205,7 @@
                                     </ul>
                                 </li>
                                 <li class="">
-                                    <a href="../files/extra-pages/landingpage/index.html" target="_blank">
+                                    <a href="~/assets/extra-pages/landingpage/index.html" target="_blank">
                                         <span class="pcoded-micon"><i class="feather icon-navigation-2"></i></span>
                                         <span class="pcoded-mtext">Landing Page</span>
                                     </a>
@@ -1398,29 +1399,29 @@
                                             </a>
                                             <ul class="pcoded-submenu">
                                                 <li class="">
-                                                    <a href="../files/extra-pages/email-templates/email-welcome.html">
+                                                    <a href="~/assets/extra-pages/email-templates/email-welcome.html">
                                                         <span class="pcoded-mtext">Welcome Email</span>
                                                     </a>
                                                 </li>
                                                 <li class="">
-                                                    <a href="../files/extra-pages/email-templates/email-password.html">
+                                                    <a href="~/assets/extra-pages/email-templates/email-password.html">
                                                         <span class="pcoded-mtext">Reset Password</span>
                                                     </a>
                                                 </li>
                                                 <li class="">
                                                     <a
-                                                        href="../files/extra-pages/email-templates/email-newsletter.html">
+                                                        href="~/assets/extra-pages/email-templates/email-newsletter.html">
                                                         <span class="pcoded-mtext">Newsletter Email</span>
                                                     </a>
                                                 </li>
                                                 <li class="">
-                                                    <a href="../files/extra-pages/email-templates/email-launch.html">
+                                                    <a href="~/assets/extra-pages/email-templates/email-launch.html">
                                                         <span class="pcoded-mtext">App Launch</span>
                                                     </a>
                                                 </li>
                                                 <li class="">
                                                     <a
-                                                        href="../files/extra-pages/email-templates/email-activation.html">
+                                                        href="~/assets/extra-pages/email-templates/email-activation.html">
                                                         <span class="pcoded-mtext">Activation Code</span>
                                                     </a>
                                                 </li>
@@ -1794,6 +1795,7 @@
 <![endif]-->
     <!-- Warning Section Ends -->
     <!-- Required Jquery -->
+    <script src="https://kit.fontawesome.com/1aa03fd53e.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="~/admin/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="~/admin/bower_components/jquery-ui/jquery-ui.min.js"></script>
     <script type="text/javascript" src="~/admin/bower_components/popper.js/dist/umd/popper.min.js"></script>
@@ -1819,6 +1821,7 @@
     <script src="~/admin/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <!-- Custom js -->
     <script type="text/javascript" src="~/admin/assets/js/script.js"></script>
+    @RenderSection("addjs",required:false)
 
 </body>
 

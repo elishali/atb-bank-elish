@@ -3,7 +3,7 @@
 namespace Atbbank.WebUI.Areas.AdminPanel.Controllers
 {
     [Area("AdminPanel")]
-    public class SliderController : Controller
+    public class SlidersController : Controller
     {
         public IActionResult Index()
         {

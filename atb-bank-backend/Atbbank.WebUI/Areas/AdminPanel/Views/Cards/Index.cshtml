@@ -91,9 +91,49 @@
     </div>
 
     @section addjs{
+    <script src="~/libs/sweetalert/sweetalert.min.js"></script>
         <script>
         function removeEntity(id, title) {
-            console.log(id, title);
+           
+
+            swal({
+                title: "Diqqet!",
+                text: `${title} bu qeydi silmek istediyinize eminsiniz?`,
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+                buttons:['Xeyr','Beli']
+            })
+                .then((willDelete) => {
+                    if (willDelete) {
+
+                        let obj = { id };
+                        $.ajax({
+
+                        url:'@Url.Action("Delete")',
+                        type:'POST',
+                        data: obj,
+
+                            success: function (response) {
+
+                                if (response.error==true) {
+                                    toastr.error(response.message, 'Error!');
+                                    return;
+                                }
+
+                                toastr.success(response.message,'Success!');
+                                setTimeout(function () {
+                                    window.location.reload();
+                                },2e3)
+                            },
+
+                            error: function (response) {
+                                console.warn(response)
+                            }
+
+                        });
+                    }
+                });
             }
         </script>
     }

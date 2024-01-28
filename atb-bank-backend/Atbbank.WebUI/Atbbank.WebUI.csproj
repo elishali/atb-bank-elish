@@ -1221,6 +1221,7 @@
     <Folder Include="wwwroot\admin\bower_components\datedropper\js\" />
     <Folder Include="wwwroot\admin\bower_components\i18next-browser-languagedetector\js\" />
     <Folder Include="wwwroot\admin\bower_components\jquery-bar-rating\css\" />
+    <Folder Include="wwwroot\libs\" />
   </ItemGroup>
 
 </Project>

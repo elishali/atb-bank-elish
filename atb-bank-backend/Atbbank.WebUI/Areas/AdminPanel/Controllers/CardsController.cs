@@ -72,7 +72,7 @@ namespace Atbbank.WebUI.Areas.AdminPanel.Controllers
         [HttpPost]
         public IActionResult Delete(int id)
         {
-            var model = db.Cards.FirstOrDefault(m => m.Id == id);
+            var model = db.Cards.FirstOrDefault(m => m.Id == id && m.DeletedBy == null);
             if (model == null)
             
                 return Json(new

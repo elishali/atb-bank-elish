@@ -1,3 +1,4 @@
+using Atbbank.WebUI.AppCode.Services;
 using Atbbank.WebUI.Models.Persistences;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,6 +21,9 @@ namespace Atbbank.WebUI
             });
 
             builder.Services.AddRouting(cfg => cfg.LowercaseUrls = true);
+
+            builder.Services.AddSingleton<IDateTimeService, DateTimeService>();
+            builder.Services.AddScoped<IIdentityService, IdentityService>();
 
             var app = builder.Build();
             app.UseStaticFiles();

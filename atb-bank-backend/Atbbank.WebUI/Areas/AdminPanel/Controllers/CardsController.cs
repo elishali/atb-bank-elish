@@ -1,8 +1,6 @@
 ﻿using Atbbank.WebUI.Models.Entities;
 using Atbbank.WebUI.Models.Persistences;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace Atbbank.WebUI.Areas.AdminPanel.Controllers
 {
@@ -31,8 +29,6 @@ namespace Atbbank.WebUI.Areas.AdminPanel.Controllers
         [HttpPost]
         public IActionResult Create(Card model)
         {
-            model.CreatedAt = DateTime.Now;
-            model.CreatedBy = 1;
             db.Cards.Add(model);
             db.SaveChanges();
             return RedirectToAction(nameof(Index));
@@ -60,8 +56,6 @@ namespace Atbbank.WebUI.Areas.AdminPanel.Controllers
         [HttpPost]
         public IActionResult Edit(Card model)
         {
-            model.LastModifiedAt = DateTime.Now;
-            model.LastModifiedBy = 1;
             db.Entry(model).State=Microsoft.EntityFrameworkCore.EntityState.Modified;
             db.Entry(model).Property(m => m.CreatedAt).IsModified = false;
             db.Entry(model).Property(m => m.CreatedBy).IsModified = false;
@@ -80,9 +74,7 @@ namespace Atbbank.WebUI.Areas.AdminPanel.Controllers
                     error = true,
                     message = "Qeyd movcud deyil!"
                 });
-
-                model.DeletedAt = DateTime.Now;
-                model.DeletedBy = 1;
+                db.Cards.Remove(model);
                 db.SaveChanges();
 
             return Json(new

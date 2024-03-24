@@ -1,9 +1,11 @@
 ﻿using Atbbank.WebUI.Models.Entities;
 using Atbbank.WebUI.Models.Persistences;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Atbbank.WebUI.Areas.AdminPanel.Controllers
 {
+    [Authorize(Roles ="Admin")]
     [Area("AdminPanel")]
     public class CardsController : Controller
     {

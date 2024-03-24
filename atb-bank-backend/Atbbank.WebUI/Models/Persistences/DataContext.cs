@@ -1,11 +1,12 @@
 ﻿using Atbbank.WebUI.AppCode.Services;
 using Atbbank.WebUI.Models.Entities;
 using Atbbank.WebUI.Models.Entities.Commons;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Atbbank.WebUI.Models.Persistences
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<AppUser>
     {
         private readonly IDateTimeService dateTimeService;
         private readonly IIdentityService identityService;
@@ -20,6 +21,7 @@ namespace Atbbank.WebUI.Models.Persistences
         public DbSet<Card> Cards { get; set; }
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<UsefulCard> UsefulCards { get; set; }
+      
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

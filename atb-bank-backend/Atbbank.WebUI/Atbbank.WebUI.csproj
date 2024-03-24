@@ -1200,6 +1200,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.25">
       <PrivateAssets>all</PrivateAssets>
@@ -1215,6 +1216,7 @@
 
   <ItemGroup>
     <Folder Include="Areas\AdminPanel\Models\" />
+    <Folder Include="Areas\AdminPanel\Views\HomeFerdi\" />
     <Folder Include="wwwroot\admin\assets\pages\foo-table\images\" />
     <Folder Include="wwwroot\admin\assets\pages\sticky\css\images\" />
     <Folder Include="wwwroot\admin\bower_components\c3\css\" />

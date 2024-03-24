@@ -1,5 +1,7 @@
 using Atbbank.WebUI.AppCode.Services;
+using Atbbank.WebUI.Models.Entities;
 using Atbbank.WebUI.Models.Persistences;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Atbbank.WebUI
@@ -24,10 +26,14 @@ namespace Atbbank.WebUI
 
             builder.Services.AddSingleton<IDateTimeService, DateTimeService>();
             builder.Services.AddScoped<IIdentityService, IdentityService>();
+            builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<DataContext>();
+            //builder.Services.AddScoped<IMailServices, IMailServices>();
 
             var app = builder.Build();
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(cfg =>
             {
 
@@ -39,6 +45,7 @@ namespace Atbbank.WebUI
 
                 cfg.MapControllerRoute("default","{controller=home}/{action=index}/{id?}");
             });
+           
 
             app.Run();
         }

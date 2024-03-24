@@ -1,5 +1,4 @@
-﻿using Atbbank.WebUI.Models.Entities;
-using Atbbank.WebUI.Models.Persistences;
+﻿using Atbbank.WebUI.Models.Persistences;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Atbbank.WebUI.Controllers
@@ -14,16 +13,16 @@ namespace Atbbank.WebUI.Controllers
         }
         public IActionResult Index()
         {
-            var cards = db.Cards.ToList();
-            var usefulcard = db.UsefulCards.ToList();
-            var slider=db.Sliders.ToList();
+            var cards = db.Cards.Where(x=>x.DeletedBy == null).ToList();
+            var usefulcard = db.UsefulCards.Where(x => x.DeletedBy == null).ToList();
+            var slider=db.Sliders.Where(x => x.DeletedBy == null).ToList();
 
 
             var viewModel = new IndexViewModel
             {
                 cards = cards,
                 UsefulCards = usefulcard,
-                slider=slider,
+                sliders=slider
             };
             return View(viewModel);
 

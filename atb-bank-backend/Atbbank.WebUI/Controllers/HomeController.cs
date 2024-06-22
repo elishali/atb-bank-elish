@@ -1,4 +1,5 @@
-﻿using Atbbank.WebUI.Models.Persistences;
+﻿using Atbbank.WebUI.AppCode.Services;
+using Atbbank.WebUI.Models.Persistences;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Atbbank.WebUI.Controllers
@@ -7,12 +8,14 @@ namespace Atbbank.WebUI.Controllers
     {
         private readonly DataContext db;
 
+
         public HomeController(DataContext db)
         {
             this.db = db;
         }
         public IActionResult Index()
         {
+
             var cards = db.Cards.Where(x=>x.DeletedBy == null).ToList();
             var usefulcard = db.UsefulCards.Where(x => x.DeletedBy == null).ToList();
             var slider=db.Sliders.Where(x => x.DeletedBy == null).ToList();

@@ -17,7 +17,7 @@ namespace Atbbank.WebUI.Areas.AdminPanel.Controllers
         }
         public IActionResult Login()
         {
-            if (User.Identity.IsAuthenticated) return RedirectToAction("Index", "Home");
+            //if (User.Identity.IsAuthenticated) return RedirectToAction("Index", "Dashboard");
             return View();
         }
         [HttpPost]
@@ -27,7 +27,7 @@ namespace Atbbank.WebUI.Areas.AdminPanel.Controllers
             var user = await _userManager.FindByNameAsync(model.UserName);
             var result = await _signInManager
                 .PasswordSignInAsync(user, model.Password, false, false);
-            if(result.Succeeded) return RedirectToAction("Index", "Home");
+            if(result.Succeeded) return RedirectToAction("Index", "Dashboard");
             return View();
         }
     }

@@ -22,12 +22,13 @@ namespace Atbbank.WebUI
                     });
             });
 
+
             builder.Services.AddRouting(cfg => cfg.LowercaseUrls = true);
 
             builder.Services.AddSingleton<IDateTimeService, DateTimeService>();
             builder.Services.AddScoped<IIdentityService, IdentityService>();
             builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<DataContext>();
-            //builder.Services.AddScoped<IMailServices, IMailServices>();
+          
 
             var app = builder.Build();
             app.UseStaticFiles();
